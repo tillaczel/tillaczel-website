@@ -94,13 +94,13 @@ export default function Publications() {
 
                 {/* Content */}
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-xl font-bold mb-2 text-blue-400 hover:text-blue-300 transition-colors">
+                  <h3 className="text-lg font-bold mb-2 text-blue-400 hover:text-blue-300 transition-colors">
                     {pub.title}
                   </h3>
                   
-                  <p className="text-gray-400 mb-2">{pub.authors}</p>
+                  <p className="text-gray-400 text-sm mb-2">{pub.authors}</p>
                   
-                  <p className="text-gray-500 italic mb-4">
+                  <p className="text-gray-500 italic text-sm mb-4">
                     {pub.venue} • {pub.year}
                   </p>
                   

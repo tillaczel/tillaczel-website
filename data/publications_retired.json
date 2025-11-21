@@ -1,0 +1,111 @@
+[
+  {
+    "title": "Efficient Multimodal Alignment: To Freeze or Not to Freeze?",
+    "authors": "Aczel, Till; Wattenhofer, Roger",
+    "venue": "UniReps: the First Workshop on Unifying Representations in Neural Models",
+    "year": 2023,
+    "type": "conference",
+    "url": "https://openreview.net/pdf?id=ul5OdS6pfU",
+    "code": "",
+    "bibtex": "@inproceedings{aczel2023efficient,\n  title={Efficient Multimodal Alignment: To Freeze or Not to Freeze?},\n  author={Aczel, Till and Wattenhofer, Roger},\n  booktitle={UniReps: the First Workshop on Unifying Representations in Neural Models},\n  year={2023},\n  url={https://openreview.net/pdf?id=ul5OdS6pfU}\n}",
+    "abstract": ""
+  },
+  {
+    "title": "SUPClust: Active learning at the boundaries",
+    "authors": "Ono, Yuta; Aczel, Till; Estermann, Benjamin; Wattenhofer, Roger",
+    "venue": "arXiv preprint arXiv:2403.03741",
+    "year": 2024,
+    "type": "preprint",
+    "url": "https://arxiv.org/abs/2403.03741",
+    "code": "",
+    "bibtex": "@misc{ono2024supclustactivelearningboundaries,\n      title={SUPClust: Active Learning at the Boundaries},\n      author={Yuta Ono and Till Aczel and Benjamin Estermann and Roger Wattenhofer},\n      year={2024},\n      eprint={2403.03741},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2403.03741}\n}",
+    "abstract": ""
+  },
+  {
+    "title": "Bridging diversity and uncertainty in active learning with self-supervised pre-training",
+    "authors": "Doucet, Paul; Estermann, Benjamin; Aczel, Till; Wattenhofer, Roger",
+    "venue": "arXiv preprint arXiv:2403.03728",
+    "year": 2024,
+    "type": "preprint",
+    "url": "https://arxiv.org/abs/2403.03728",
+    "code": "",
+    "bibtex": "@misc{doucet2025bridgingdiversityuncertaintyactive,\n      title={Bridging Diversity and Uncertainty in Active learning with Self-Supervised Pre-Training},\n      author={Paul Doucet and Benjamin Estermann and Till Aczel and Roger Wattenhofer},\n      year={2025},\n      eprint={2403.03728},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2403.03728}\n}",
+    "abstract": ""
+  },
+  {
+    "title": "Human Aligned Compression for Robust Models",
+    "authors": "Räber, Samuel; Plesner, Andreas; Aczel, Till; Wattenhofer, Roger",
+    "venue": "arXiv preprint arXiv:2504.12255",
+    "year": 2025,
+    "type": "preprint",
+    "url": "https://arxiv.org/abs/2504.12255",
+    "code": "",
+    "bibtex": "@misc{raber2025humanalignedcompressionrobustmodels,\n      title={Human Aligned Compression for Robust Models},\n      author={Samuel Räber and Andreas Plesner and Till Aczel and Roger Wattenhofer},\n      year={2025},\n      eprint={2504.12255},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2504.12255}\n}",
+    "abstract": ""
+  },
+  {
+    "title": "Keep It Real: Challenges in Attacking Compression-Based Adversarial Purification",
+    "authors": "Räber, Samuel; Aczel, Till; Plesner, Andreas; Wattenhofer, Roger",
+    "venue": "arXiv preprint arXiv:2508.05489",
+    "year": 2025,
+    "type": "preprint",
+    "url": "https://arxiv.org/abs/2508.05489",
+    "code": "",
+    "bibtex": "@misc{raber2025keepitrealchallengesattackingcompressionbasedadversarialpurification,\n      title={Keep It Real: Challenges in Attacking Compression-Based Adversarial Purification},\n      author={Samuel Räber and Till Aczel and Andreas Plesner and Roger Wattenhofer},\n      year={2025},\n      eprint={2508.05489},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2508.05489}\n}",
+    "abstract": ""
+  },
+  {
+    "title": "Recurrent Deep Differentiable Logic Gate Networks",
+    "authors": "Bührer, Simon; Plesner, Andreas; Aczel, Till; Wattenhofer, Roger",
+    "venue": "arXiv preprint arXiv:2508.06097",
+    "year": 2025,
+    "type": "preprint",
+    "url": "https://arxiv.org/abs/2508.06097",
+    "code": "",
+    "bibtex": "@misc{buehrer2025recurrentdeepdifferentiablelogicgatenetworks,\n      title={Recurrent Deep Differentiable Logic Gate Networks},\n      author={Simon Bührer and Andreas Plesner and Till Aczel and Roger Wattenhofer},\n      year={2025},\n      eprint={2508.06097},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2508.06097}\n}",
+    "abstract": ""
+  },
+  {
+    "title": "From MNIST to ImageNet: Understanding the Scalability Boundaries of Differentiable Logic Gate Networks",
+    "authors": "Brändle, Sven; Aczel, Till; Plesner, Andreas; Wattenhofer, Roger",
+    "venue": "arXiv preprint arXiv:2509.25933",
+    "year": 2025,
+    "type": "preprint",
+    "url": "https://arxiv.org/abs/2509.25933",
+    "code": "",
+    "bibtex": "@misc{brandle2025mnistimagenetunderstandingscalabilityboundariesdifferentiablelogicgatenetworks,\n      title={From MNIST to ImageNet: Understanding the Scalability Boundaries of Differentiable Logic Gate Networks},\n      author={Sven Brändle and Till Aczel and Andreas Plesner and Roger Wattenhofer},\n      year={2025},\n      eprint={2509.25933},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2509.25933}\n}",
+    "abstract": ""
+  },
+  {
+    "title": "Virtual Fashion Photo-Shoots: Building a Large-Scale Garment-Lookbook Dataset",
+    "authors": "Hauri, Yannick; Lanzendörfer, Luca A; Aczel, Till",
+    "venue": "arXiv preprint arXiv:2510.00633",
+    "year": 2025,
+    "type": "preprint",
+    "url": "https://arxiv.org/abs/2510.00633",
+    "code": "",
+    "bibtex": "@misc{hauri2025virtualfashionphotoshootsbuildinglargescalegarmentlookbookdataset,\n      title={Virtual Fashion Photo-Shoots: Building a Large-Scale Garment-Lookbook Dataset},\n      author={Yannick Hauri and Luca A Lanzendörfer and Till Aczel},\n      year={2025},\n      eprint={2510.00633},\n      archivePrefix={arXiv},\n      primaryClass={cs.CV},\n      url={https://arxiv.org/abs/2510.00633}\n}",
+    "abstract": ""
+  },
+  {
+    "title": "Efficient Bayesian Inference from Noisy Pairwise Comparisons",
+    "authors": "Aczel, Till; Theis, Lucas; Roger, Wattenhofer",
+    "venue": "arXiv preprint arXiv:2510.09333",
+    "year": 2025,
+    "type": "preprint",
+    "url": "https://arxiv.org/abs/2510.09333",
+    "code": "",
+    "bibtex": "@misc{aczel2025efficientbayesianinferencenoisypairwisecomparisons,\n      title={Efficient Bayesian Inference from Noisy Pairwise Comparisons},\n      author={Till Aczel and Lucas Theis and Roger Wattenhofer},\n      year={2025},\n      eprint={2510.09333},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2510.09333}\n}",
+    "abstract": ""
+  },
+  {
+    "title": "The Impact of Training Data on Adversarial Robustness",
+    "authors": "Zimmerli, Marco; Plesner, Andreas; Aczel, Till; Wattenhofer, Roger",
+    "venue": "arXiv preprint arXiv:2509.25927",
+    "year": 2025,
+    "type": "preprint",
+    "url": "https://arxiv.org/abs/2509.25927",
+    "code": "",
+    "bibtex": "@misc{zimmerli2025impacttrainingdataadversarialrobustness,\n      title={The Impact of Training Data on Adversarial Robustness},\n      author={Marco Zimmerli and Andreas Plesner and Till Aczel and Roger Wattenhofer},\n      year={2025},\n      eprint={2509.25927},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2509.25927}\n}"
+  }
+]

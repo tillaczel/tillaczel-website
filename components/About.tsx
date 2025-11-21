@@ -1,6 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
+import { useState } from 'react'
 import newsData from '@/data/news.json'
 
 interface NewsItem {
@@ -11,6 +13,8 @@ interface NewsItem {
 }
 
 export default function About() {
+  const [imageError, setImageError] = useState(false)
+  
   const news = (newsData as NewsItem[]).sort((a, b) => {
     return new Date(b.date).getTime() - new Date(a.date).getTime()
   })
@@ -61,13 +65,26 @@ export default function About() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative w-48 h-48 md:w-64 md:h-64 flex-shrink-0"
+            className="relative w-48 h-64 md:w-64 md:h-96 flex-shrink-0"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur-xl opacity-50 animate-pulse"></div>
             <div className="relative w-full h-full rounded-lg overflow-hidden border-4 border-blue-500 shadow-2xl">
-              <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center text-6xl">
-                👤
-              </div>
+              {!imageError ? (
+                <Image
+                  src="/profile.jpg"
+                  alt="Till Aczel"
+                  width={512}
+                  height={768}
+                  className="w-full h-full object-cover"
+                  quality={100}
+                  priority
+                  onError={() => setImageError(true)}
+                />
+              ) : (
+                <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center text-6xl">
+                  👤
+                </div>
+              )}
             </div>
           </motion.div>
         </div>
