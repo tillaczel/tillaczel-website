@@ -1,37 +1,28 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import newsData from '@/data/news.json'
+
+interface NewsItem {
+  id: number
+  date: string
+  title: string
+  description: string
+}
 
 export default function About() {
-  const highlights = [
-    {
-      title: 'Research Excellence',
-      description: 'Published 15+ papers in top-tier conferences and journals',
-      icon: '📚',
-    },
-    {
-      title: 'Teaching Award',
-      description: 'Recognized for outstanding teaching in Deep Learning',
-      icon: '🏆',
-    },
-    {
-      title: 'Industry Collaboration',
-      description: 'Collaborated with leading tech companies on AI projects',
-      icon: '🤝',
-    },
-    {
-      title: 'Open Source',
-      description: 'Maintainer of popular ML libraries with 10k+ GitHub stars',
-      icon: '💻',
-    },
-  ]
+  const news = newsData as NewsItem[]
+
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString)
+    return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+  }
 
   return (
     <section id="about" className="section-container pt-24">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto"
       >
@@ -40,8 +31,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-8 items-center md:items-start mb-12">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="relative w-48 h-48 md:w-64 md:h-64 flex-shrink-0"
           >
@@ -55,8 +45,7 @@ export default function About() {
           
           <motion.div
             initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex-1"
           >
@@ -84,36 +73,33 @@ export default function About() {
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <h3 className="text-2xl font-bold mb-6 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-            Highlights & Achievements
+            News
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {highlights.map((highlight, index) => (
+          <div className="space-y-3">
+            {news.map((item, index) => (
               <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                key={item.id}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                whileHover={{ scale: 1.05, y: -5 }}
-                className="card group"
+                className="flex items-start gap-3 py-2"
               >
-                <div className="flex items-start gap-4">
-                  <div className="text-4xl group-hover:scale-110 transition-transform duration-300">
-                    {highlight.icon}
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-semibold mb-2 text-blue-400">
-                      {highlight.title}
+                <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 mb-1 flex-wrap">
+                    <span className="text-xs text-gray-500">{formatDate(item.date)}</span>
+                    <span className="text-gray-600">•</span>
+                    <h4 className="text-sm font-semibold text-blue-400">
+                      {item.title}
                     </h4>
-                    <p className="text-gray-400">
-                      {highlight.description}
-                    </p>
                   </div>
+                  <p className="text-sm text-gray-400">
+                    {item.description}
+                  </p>
                 </div>
               </motion.div>
             ))}

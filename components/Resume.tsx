@@ -16,8 +16,7 @@ export default function Resume() {
     <section id="resume" className="section-container">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto"
       >
@@ -25,8 +24,7 @@ export default function Resume() {
 
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="card text-center"
         >
@@ -55,50 +53,6 @@ export default function Resume() {
             </svg>
             Download Resume (PDF)
           </motion.button>
-        </motion.div>
-
-        {/* Resume Preview Sections */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6"
-        >
-          <div className="card">
-            <h3 className="text-xl font-bold mb-4 text-blue-400">Education</h3>
-            <ul className="space-y-3 text-gray-300">
-              <li>
-                <strong className="text-white">Ph.D. in Computer Science</strong>
-                <br />
-                <span className="text-sm text-gray-400">University Name, Year</span>
-              </li>
-              <li>
-                <strong className="text-white">M.S. in Computer Science</strong>
-                <br />
-                <span className="text-sm text-gray-400">University Name, Year</span>
-              </li>
-              <li>
-                <strong className="text-white">B.S. in Computer Science</strong>
-                <br />
-                <span className="text-sm text-gray-400">University Name, Year</span>
-              </li>
-            </ul>
-          </div>
-
-          <div className="card">
-            <h3 className="text-xl font-bold mb-4 text-purple-400">Key Skills</h3>
-            <div className="flex flex-wrap gap-2">
-              {['Deep Learning', 'Machine Learning', 'Python', 'PyTorch', 'TensorFlow', 'Research', 'Teaching'].map((skill) => (
-                <span
-                  key={skill}
-                  className="px-3 py-1 bg-gray-700 rounded-full text-sm text-gray-300 border border-gray-600"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
         </motion.div>
       </motion.div>
     </section>

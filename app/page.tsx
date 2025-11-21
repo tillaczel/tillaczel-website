@@ -10,8 +10,8 @@ export default function Home() {
       <About />
       <Publications />
       <Teaching />
-      <Contact />
       <Resume />
+      <Contact />
     </>
   )
 }

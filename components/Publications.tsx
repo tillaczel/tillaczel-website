@@ -40,11 +40,10 @@ export default function Publications() {
   }
 
   return (
-    <section id="publications" className="section-container bg-gray-800/50">
+    <section id="publications" className="section-container">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto"
       >
@@ -55,8 +54,7 @@ export default function Publications() {
             <motion.div
               key={pub.id}
               initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.02 }}
               className="card cursor-pointer"
