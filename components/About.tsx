@@ -44,19 +44,19 @@ export default function About() {
             <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
               Till Aczel
             </h2>
-            <p className="text-lg text-gray-300 mb-4">
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
               PhD Student — ETH Zurich
             </p>
 
-            <p className="text-gray-400 leading-relaxed mb-4">
+            <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
               I research efficient, human-aligned learned image compression. My work sits at the intersection of neural codecs and perceptual quality: building compression systems that not only minimize bits but also produce reconstructions that real people judge as high-quality and faithful.
             </p>
 
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
               Human-aligned compression matters because rate–distortion metrics like MSE or PSNR often disagree with human perception. Small pixel-wise errors can be unnoticeable, while certain structured artifacts greatly reduce perceived quality. Achieving human-aligned outputs therefore requires perceptual objectives, robust decoders, and evaluation methods that correlate with what viewers actually prefer — which is hard because human judgements are subjective, task-dependent, and sensitive to subtle texture and structure cues.
             </p>
 
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
               Learned compression has made big strides in quality, but practical deployment still faces major shortcomings: inference is often slow, models are compute- and memory-hungry, and some approaches rely on large generative decoders that can hallucinate plausible—but incorrect—content. For learned codecs to be widely adopted they must match traditional codecs (JPEG, PNG, HEVC) in speed, latency, and energy cost while delivering superior perceptual quality. My research focuses on closing that gap: reducing model complexity and runtime, improving perceptual fidelity and robustness, and designing evaluation and training strategies that align algorithmic improvements with real human preferences.
             </p>
           </motion.div>
@@ -103,8 +103,8 @@ export default function About() {
                 transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
                 className="flex items-start gap-4 py-2"
               >
-                <span className="text-xs text-gray-500 w-32 flex-shrink-0">{formatDate(item.date)}</span>
-                <p className="text-sm text-gray-400 flex-1">
+                <span className="text-xs text-gray-500 dark:text-gray-500 w-32 flex-shrink-0">{formatDate(item.date)}</span>
+                <p className="text-sm text-gray-600 dark:text-gray-400 flex-1">
                   {item.description}
                 </p>
               </motion.div>

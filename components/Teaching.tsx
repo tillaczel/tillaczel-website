@@ -61,12 +61,12 @@ export default function Teaching() {
             </div>
 
             <div className="prose prose-invert max-w-none">
-              <p className="text-gray-300 leading-relaxed mb-6">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                 A practical deep learning course where students move from theory to real-world implementation. They learn to build models in PyTorch across image classification and generation, audio denoising, natural language processing, graph neural networks, and reinforcement learning.
               </p>
 
               <div className="bg-gray-700/30 p-4 rounded-lg mb-6 border border-gray-600">
-                <p className="text-gray-300 text-sm leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
                   <strong className="text-blue-400">Course Overhaul:</strong>
                   When I took over the course, enrollment was around 30 students. I scaled it to 150, modernized the content, and reworked the assignments to ensure they meaningfully test understanding.
                 </p>
@@ -75,7 +75,7 @@ export default function Teaching() {
               <div className="space-y-6">
                 <div>
                   <h4 className="font-semibold text-blue-400 mb-3 text-lg">Key Improvements & Implementations</h4>
-                  <ul className="text-gray-300 space-y-2 text-sm">
+                  <ul className="text-gray-700 dark:text-gray-300 space-y-2 text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-blue-400 mt-1">•</span>
                       <span>
@@ -141,17 +141,17 @@ export default function Teaching() {
                       }`}>
                         {thesis.status === 'current' ? 'In Progress' : '✓ Completed'}
                       </span>
-                      <span className="text-gray-500 text-sm">{getTypeLabel(thesis.type)}</span>
-                      <span className="text-gray-500 text-sm">• {formatSemester(thesis.semester)}</span>
+                      <span className="text-gray-500 dark:text-gray-500 text-sm">{getTypeLabel(thesis.type)}</span>
+                      <span className="text-gray-500 dark:text-gray-500 text-sm">• {formatSemester(thesis.semester)}</span>
                     </div>
                     <h3 className="text-xl font-bold mb-2 text-blue-400">
                       {thesis.title.replace(' [confidential]', '')}
                     </h3>
-                    <p className="text-gray-400 mb-1">
+                    <p className="text-gray-600 dark:text-gray-400 mb-1">
                       <span className="font-medium">Student:</span> {thesis.students.length > 0 ? thesis.students.join(', ') : 'N/A'}
                     </p>
                     {thesis.supervisors.filter(s => s !== 'Till Aczel').length > 0 && (
-                      <p className="text-gray-500 text-sm">
+                      <p className="text-gray-500 dark:text-gray-500 text-sm">
                         <span className="font-medium">Co-supervised by:</span> {thesis.supervisors.filter(s => s !== 'Till Aczel').join(', ')}
                       </p>
                     )}

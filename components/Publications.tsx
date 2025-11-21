@@ -98,9 +98,9 @@ export default function Publications() {
                     {pub.title}
                   </h3>
                   
-                  <p className="text-gray-400 text-sm mb-2">{pub.authors}</p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">{pub.authors}</p>
                   
-                  <p className="text-gray-500 italic text-sm mb-4">
+                  <p className="text-gray-500 dark:text-gray-500 italic text-sm mb-4">
                     {pub.venue} • {pub.year}
                   </p>
                   
@@ -154,10 +154,10 @@ export default function Publications() {
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: 'auto' }}
                       exit={{ opacity: 0, height: 0 }}
-                      className="mt-4 pt-4 border-t border-gray-700"
+                      className="mt-4 pt-4 border-t border-gray-300 dark:border-gray-700"
                     >
-                      <p className="text-sm font-semibold text-gray-300 mb-2">Abstract</p>
-                      <p className="text-gray-400 leading-relaxed text-sm">{pub.abstract}</p>
+                      <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Abstract</p>
+                      <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">{pub.abstract}</p>
                     </motion.div>
                   )}
                 </div>
@@ -174,14 +174,14 @@ export default function Publications() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
-            className="bg-gray-800 rounded-lg border border-gray-700 shadow-2xl max-w-3xl w-full max-h-[80vh] flex flex-col"
+            className="bg-white dark:bg-gray-800 rounded-lg border border-gray-300 dark:border-gray-700 shadow-2xl max-w-3xl w-full max-h-[80vh] flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center justify-between p-4 border-b border-gray-700">
-              <h3 className="text-xl font-bold text-blue-400">BibTeX</h3>
+            <div className="flex items-center justify-between p-4 border-b border-gray-300 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-blue-400 dark:text-blue-400">BibTeX</h3>
               <button
                 onClick={handleCloseModal}
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
                 aria-label="Close"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -190,7 +190,7 @@ export default function Publications() {
               </button>
             </div>
             <div className="p-4 flex-1 overflow-auto">
-              <pre className="text-sm text-gray-300 font-mono whitespace-pre-wrap bg-gray-900 p-4 rounded border border-gray-700">
+              <pre className="text-sm text-gray-800 dark:text-gray-300 font-mono whitespace-pre-wrap bg-gray-100 dark:bg-gray-900 p-4 rounded border border-gray-300 dark:border-gray-700">
                 {bibtexModal.text}
               </pre>
             </div>
