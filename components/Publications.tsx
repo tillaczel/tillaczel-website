@@ -5,7 +5,6 @@ import { useState } from 'react'
 import publicationsData from '@/data/publications.json'
 
 interface Publication {
-  id: number
   title: string
   authors: string
   venue: string
@@ -18,19 +17,19 @@ interface Publication {
 }
 
 export default function Publications() {
-  const [expandedId, setExpandedId] = useState<number | null>(null)
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
   const [copiedBibtex, setCopiedBibtex] = useState<number | null>(null)
 
   const publications = publicationsData as Publication[]
 
-  const handleBibtexClick = async (e: React.MouseEvent, pub: Publication) => {
+  const handleBibtexClick = async (e: React.MouseEvent, pub: Publication, index: number) => {
     e.stopPropagation()
     if (pub.bibtex) {
       try {
         const response = await fetch(pub.bibtex)
         const bibtexText = await response.text()
         await navigator.clipboard.writeText(bibtexText)
-        setCopiedBibtex(pub.id)
+        setCopiedBibtex(index)
         setTimeout(() => setCopiedBibtex(null), 2000)
       } catch (error) {
         // If fetch fails, try to open the URL
@@ -52,13 +51,13 @@ export default function Publications() {
         <div className="space-y-6">
           {publications.map((pub, index) => (
             <motion.div
-              key={pub.id}
+              key={index}
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.02 }}
               className="card cursor-pointer"
-              onClick={() => setExpandedId(expandedId === pub.id ? null : pub.id)}
+              onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
             >
               <div className="flex items-start gap-4">
                 {/* Icon on the left */}
@@ -112,19 +111,19 @@ export default function Publications() {
                     )}
                     {pub.bibtex && (
                       <button
-                        onClick={(e) => handleBibtexClick(e, pub)}
+                        onClick={(e) => handleBibtexClick(e, pub, index)}
                         className="flex items-center gap-1.5 text-sm text-purple-400 hover:text-purple-300 transition-colors"
                         aria-label="Copy BibTeX"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
-                        <span>{copiedBibtex === pub.id ? 'Copied!' : 'BibTeX'}</span>
+                        <span>{copiedBibtex === index ? 'Copied!' : 'BibTeX'}</span>
                       </button>
                     )}
                   </div>
                   
-                  {expandedId === pub.id && pub.abstract && (
+                  {expandedIndex === index && pub.abstract && (
                     <motion.div
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: 'auto' }}

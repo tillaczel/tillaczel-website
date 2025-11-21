@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "title": "Efficient Multimodal Alignment: To Freeze or Not to Freeze?",
     "authors": "Aczel, Till; Wattenhofer, Roger",
     "venue": "UniReps: the First Workshop on Unifying Representations in Neural Models",
@@ -12,7 +11,6 @@
     "abstract": ""
   },
   {
-    "id": 2,
     "title": "SUPClust: Active learning at the boundaries",
     "authors": "Ono, Yuta; Aczel, Till; Estermann, Benjamin; Wattenhofer, Roger",
     "venue": "arXiv preprint arXiv:2403.03741",
@@ -24,7 +22,6 @@
     "abstract": ""
   },
   {
-    "id": 3,
     "title": "Bridging diversity and uncertainty in active learning with self-supervised pre-training",
     "authors": "Doucet, Paul; Estermann, Benjamin; Aczel, Till; Wattenhofer, Roger",
     "venue": "arXiv preprint arXiv:2403.03728",
@@ -36,7 +33,6 @@
     "abstract": ""
   },
   {
-    "id": 4,
     "title": "Conditional Hallucinations for Image Compression",
     "authors": "Aczel, Till; Wattenhofer, Roger",
     "venue": "2025 Data Compression Conference (DCC)",
@@ -48,7 +44,6 @@
     "abstract": ""
   },
   {
-    "id": 5,
     "title": "Human Aligned Compression for Robust Models",
     "authors": "Räber, Samuel; Plesner, Andreas; Aczel, Till; Wattenhofer, Roger",
     "venue": "arXiv preprint arXiv:2504.12255",
@@ -60,7 +55,6 @@
     "abstract": ""
   },
   {
-    "id": 6,
     "title": "Mind the Gap: Removing the Discretization Gap in Differentiable Logic Gate Networks",
     "authors": "Yousefi, Shakir; Plesner, Andreas; Aczel, Till; Wattenhofer, Roger",
     "venue": "arXiv preprint arXiv:2506.07500",
@@ -72,7 +66,6 @@
     "abstract": ""
   },
   {
-    "id": 7,
     "title": "Keep It Real: Challenges in Attacking Compression-Based Adversarial Purification",
     "authors": "Räber, Samuel; Aczel, Till; Plesner, Andreas; Wattenhofer, Roger",
     "venue": "arXiv preprint arXiv:2508.05489",
@@ -84,7 +77,6 @@
     "abstract": ""
   },
   {
-    "id": 8,
     "title": "Recurrent Deep Differentiable Logic Gate Networks",
     "authors": "Bührer, Simon; Plesner, Andreas; Aczel, Till; Wattenhofer, Roger",
     "venue": "Proceedings of the 2nd International Workshop on Edge and Mobile Foundation Models",
@@ -96,7 +88,6 @@
     "abstract": ""
   },
   {
-    "id": 9,
     "title": "HyperCool: Reducing Encoding Cost in Overfitted Codecs with Hypernetworks",
     "authors": "Borrell-Tatché, Pep; Aczel, Till; Ladune, Théo; Wattenhofer, Roger",
     "venue": "arXiv preprint arXiv:2509.18748",
@@ -108,7 +99,6 @@
     "abstract": ""
   },
   {
-    "id": 10,
     "title": "The Unwinnable Arms Race of AI Image Detection",
     "authors": "Aczel, Till; Vettor, Lorenzo; Plesner, Andreas; Wattenhofer, Roger",
     "venue": "arXiv preprint arXiv:2509.21135",
@@ -120,7 +110,6 @@
     "abstract": ""
   },
   {
-    "id": 11,
     "title": "From MNIST to ImageNet: Understanding the Scalability Boundaries of Differentiable Logic Gate Networks",
     "authors": "Brändle, Sven; Aczel, Till; Plesner, Andreas; Wattenhofer, Roger",
     "venue": "arXiv preprint arXiv:2509.25933",
@@ -132,7 +121,6 @@
     "abstract": ""
   },
   {
-    "id": 12,
     "title": "Light Differentiable Logic Gate Networks",
     "authors": "Rüttgers, Lukas; Aczel, Till; Plesner, Andreas; Wattenhofer, Roger",
     "venue": "arXiv preprint arXiv:2510.03250",
@@ -144,7 +132,6 @@
     "abstract": ""
   },
   {
-    "id": 13,
     "title": "Virtual Fashion Photo-Shoots: Building a Large-Scale Garment-Lookbook Dataset",
     "authors": "Hauri, Yannick; Lanzendörfer, Luca A; Aczel, Till",
     "venue": "arXiv preprint arXiv:2510.00633",
@@ -156,7 +143,6 @@
     "abstract": ""
   },
   {
-    "id": 14,
     "title": "Efficient Bayesian Inference from Noisy Pairwise Comparisons",
     "authors": "Aczel, Till; Theis, Lucas; Roger, Wattenhofer",
     "venue": "arXiv preprint arXiv:2510.09333",
@@ -168,7 +154,6 @@
     "abstract": ""
   },
   {
-    "id": 15,
     "title": "The Impact of Training Data on Adversarial Robustness",
     "authors": "Zimmerli, Marco; Plesner, Andreas; Aczel, Till; Wattenhofer, Roger",
     "venue": "NeurIPS 2025 Workshop: Reliable ML from Unreliable Data",
