@@ -7,7 +7,7 @@
     "type": "conference",
     "url": "",
     "code": "",
-    "bibtex": "",
+    "bibtex": "@inproceedings{aczel2023efficient,\n  title={Efficient Multimodal Alignment: To Freeze or Not to Freeze?},\n  author={Aczel, Till and Wattenhofer, Roger},\n  booktitle={UniReps: the First Workshop on Unifying Representations in Neural Models},\n  year={2023}\n}",
     "abstract": ""
   },
   {
@@ -40,7 +40,7 @@
     "type": "conference",
     "url": "",
     "code": "",
-    "bibtex": "",
+    "bibtex": "@inproceedings{aczel2025conditional,\n  title={Conditional Hallucinations for Image Compression},\n  author={Aczel, Till and Wattenhofer, Roger},\n  booktitle={2025 Data Compression Conference (DCC)},\n  year={2025}\n}",
     "abstract": ""
   },
   {
@@ -84,7 +84,7 @@
     "type": "conference",
     "url": "",
     "code": "",
-    "bibtex": "",
+    "bibtex": "@inproceedings{buehrer2025recurrent,\n  title={Recurrent Deep Differentiable Logic Gate Networks},\n  author={B{\\\"u}hrer, Simon and Plesner, Andreas and Aczel, Till and Wattenhofer, Roger},\n  booktitle={Proceedings of the 2nd International Workshop on Edge and Mobile Foundation Models},\n  year={2025}\n}",
     "abstract": ""
   },
   {
@@ -161,7 +161,7 @@
     "type": "conference",
     "url": "",
     "code": "",
-    "bibtex": "",
+    "bibtex": "@inproceedings{zimmerli2025impact,\n  title={The Impact of Training Data on Adversarial Robustness},\n  author={Zimmerli, Marco and Plesner, Andreas and Aczel, Till and Wattenhofer, Roger},\n  booktitle={NeurIPS 2025 Workshop: Reliable ML from Unreliable Data},\n  year={2025}\n}",
     "abstract": ""
   }
 ]

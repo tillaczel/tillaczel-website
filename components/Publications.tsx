@@ -18,24 +18,49 @@ interface Publication {
 
 export default function Publications() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
-  const [copiedBibtex, setCopiedBibtex] = useState<number | null>(null)
+  const [bibtexModal, setBibtexModal] = useState<{ text: string; index: number } | null>(null)
+  const [copied, setCopied] = useState(false)
 
   const publications = publicationsData as Publication[]
 
   const handleBibtexClick = async (e: React.MouseEvent, pub: Publication, index: number) => {
+    e.preventDefault()
     e.stopPropagation()
     if (pub.bibtex) {
-      try {
-        const response = await fetch(pub.bibtex)
-        const bibtexText = await response.text()
-        await navigator.clipboard.writeText(bibtexText)
-        setCopiedBibtex(index)
-        setTimeout(() => setCopiedBibtex(null), 2000)
-      } catch (error) {
-        // If fetch fails, try to open the URL
-        window.open(pub.bibtex, '_blank')
+      // Check if it's a URL (starts with http) or raw BibTeX text
+      if (pub.bibtex.startsWith('http://') || pub.bibtex.startsWith('https://')) {
+        try {
+          const response = await fetch(pub.bibtex)
+          if (!response.ok) {
+            throw new Error('Failed to fetch BibTeX')
+          }
+          const bibtexText = await response.text()
+          setBibtexModal({ text: bibtexText, index })
+        } catch (error) {
+          // If fetch fails, show error message in modal
+          setBibtexModal({ 
+            text: `Error loading BibTeX from URL.\n\nURL: ${pub.bibtex}\n\nPlease visit the URL directly to access the BibTeX.`, 
+            index 
+          })
+        }
+      } else {
+        // It's raw BibTeX text, show it directly
+        setBibtexModal({ text: pub.bibtex, index })
       }
     }
+  }
+
+  const handleCopyBibtex = async () => {
+    if (bibtexModal) {
+      await navigator.clipboard.writeText(bibtexModal.text)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    }
+  }
+
+  const handleCloseModal = () => {
+    setBibtexModal(null)
+    setCopied(false)
   }
 
   return (
@@ -111,14 +136,15 @@ export default function Publications() {
                     )}
                     {pub.bibtex && (
                       <button
+                        type="button"
                         onClick={(e) => handleBibtexClick(e, pub, index)}
                         className="flex items-center gap-1.5 text-sm text-purple-400 hover:text-purple-300 transition-colors"
-                        aria-label="Copy BibTeX"
+                        aria-label="View BibTeX"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
-                        <span>{copiedBibtex === index ? 'Copied!' : 'BibTeX'}</span>
+                        <span>BibTeX</span>
                       </button>
                     )}
                   </div>
@@ -140,6 +166,48 @@ export default function Publications() {
           ))}
         </div>
       </motion.div>
+
+      {/* BibTeX Modal */}
+      {bibtexModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm" onClick={handleCloseModal}>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            className="bg-gray-800 rounded-lg border border-gray-700 shadow-2xl max-w-3xl w-full max-h-[80vh] flex flex-col"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between p-4 border-b border-gray-700">
+              <h3 className="text-xl font-bold text-blue-400">BibTeX</h3>
+              <button
+                onClick={handleCloseModal}
+                className="text-gray-400 hover:text-white transition-colors"
+                aria-label="Close"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div className="p-4 flex-1 overflow-auto">
+              <pre className="text-sm text-gray-300 font-mono whitespace-pre-wrap bg-gray-900 p-4 rounded border border-gray-700">
+                {bibtexModal.text}
+              </pre>
+            </div>
+            <div className="flex items-center justify-end gap-3 p-4 border-t border-gray-700">
+              <button
+                onClick={handleCopyBibtex}
+                className="btn-primary inline-flex items-center gap-2 text-sm px-4 py-2"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                {copied ? 'Copied!' : 'Copy to Clipboard'}
+              </button>
+            </div>
+          </motion.div>
+        </div>
+      )}
     </section>
   )
 }
