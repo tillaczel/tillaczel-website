@@ -1,27 +1,32 @@
 [
   {
     "id": 1,
-    "date": "2024-01-15",
-    "title": "New paper accepted at ICML 2024",
-    "description": "Our work on neural architecture search has been accepted for presentation at the International Conference on Machine Learning."
+    "date": "2023-07-01",
+    "title": "Started PhD",
+    "description": "Began my PhD at ETH Zurich."
   },
   {
     "id": 2,
-    "date": "2023-12-10",
-    "title": "Teaching Award Recognition",
-    "description": "Received the Outstanding Teaching Award for the Hands-On Deep Learning course."
+    "date": "2023-12-05",
+    "title": "Became Head TA",
+    "description": "Appointed head teaching assistant for the Hands-On Deep Learning course."
   },
   {
     "id": 3,
-    "date": "2023-11-20",
-    "title": "Keynote Speaker at AI Conference",
-    "description": "Invited to give a keynote talk on the future of deep learning at the annual AI Research Symposium."
+    "date": "2024-06-13",
+    "title": "PhD Aptitude Colloquium Passed",
+    "description": "Successfully passed my Aptitude Colloquium, marking my definitive admission at ETH Zurich as a PhD student."
   },
   {
     "id": 4,
-    "date": "2023-10-05",
-    "title": "New Research Grant Awarded",
-    "description": "Secured funding for a 3-year research project on federated learning and privacy-preserving machine learning."
+    "date": "2024-11-26",
+    "title": "DCC Paper Accepted",
+    "description": "Our paper on Conditional Hallucinations for Image Compression was accepted at the 2025 Data Compression Conference (DCC)."
+  },
+  {
+    "id": 5,
+    "date": "2025-09-25",
+    "title": "Mind the Gap Accepted",
+    "description": "Our paper 'Mind the Gap: Removing the Discretization Gap in Differentiable Logic Gate Networks' was accepted."
   }
 ]
-

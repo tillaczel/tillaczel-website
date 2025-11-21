@@ -47,7 +47,7 @@ export default function Publications() {
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto"
       >
-        <h1 className="section-title text-center mb-12">Publications</h1>
+        <h1 className="section-title text-center mb-12">Selected Publications</h1>
         
         <div className="space-y-6">
           {publications.map((pub, index) => (

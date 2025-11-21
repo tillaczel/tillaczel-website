@@ -11,7 +11,9 @@ interface NewsItem {
 }
 
 export default function About() {
-  const news = newsData as NewsItem[]
+  const news = (newsData as NewsItem[]).sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime()
+  })
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString)
@@ -50,7 +52,7 @@ export default function About() {
             className="flex-1"
           >
             <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Your Name
+              Till Aczel
             </h2>
             <p className="text-lg text-gray-300 mb-4">
               Assistant Professor of Computer Science
@@ -76,9 +78,6 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <h3 className="text-2xl font-bold mb-6 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-            News
-          </h3>
           <div className="space-y-3">
             {news.map((item, index) => (
               <motion.div
@@ -86,21 +85,12 @@ export default function About() {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                className="flex items-start gap-3 py-2"
+                className="flex items-start gap-4 py-2"
               >
-                <div className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-blue-400 mt-2"></div>
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-1 flex-wrap">
-                    <span className="text-xs text-gray-500">{formatDate(item.date)}</span>
-                    <span className="text-gray-600">•</span>
-                    <h4 className="text-sm font-semibold text-blue-400">
-                      {item.title}
-                    </h4>
-                  </div>
-                  <p className="text-sm text-gray-400">
-                    {item.description}
-                  </p>
-                </div>
+                <span className="text-xs text-gray-500 w-32 flex-shrink-0">{formatDate(item.date)}</span>
+                <p className="text-sm text-gray-400 flex-1">
+                  <span className="font-semibold text-blue-400">{item.title}</span> {item.description}
+                </p>
               </motion.div>
             ))}
           </div>

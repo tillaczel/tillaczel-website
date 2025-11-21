@@ -1,39 +1,234 @@
 [
   {
-    "id": 1,
-    "student": "John Doe",
-    "title": "Deep Reinforcement Learning for Autonomous Navigation",
-    "year": 2024,
-    "type": "Master's Thesis",
-    "status": "completed",
-    "description": "Developed a deep reinforcement learning framework for autonomous robot navigation in complex environments."
+    "title": "Normalized Vision Transformers",
+    "type": "S",
+    "supervisors": ["Andreas Plesner", "Till Aczel"],
+    "semester": "FS 26",
+    "students": ["Ivanovas Anselm"],
+    "status": "current"
   },
   {
-    "id": 2,
-    "student": "Jane Smith",
-    "title": "Federated Learning for Privacy-Preserving Machine Learning",
-    "year": 2024,
-    "type": "Master's Thesis",
-    "status": "in-progress",
-    "description": "Investigating federated learning approaches to preserve privacy while maintaining model performance."
+    "title": "Automated Foosball Commentary",
+    "type": "B",
+    "supervisors": ["Till Aczel", "Joël Mathys"],
+    "semester": "HS 25",
+    "students": ["Victor Willems"],
+    "status": "current"
   },
   {
-    "id": 3,
-    "student": "Alice Johnson",
-    "title": "Neural Style Transfer: From Theory to Practice",
-    "year": 2023,
-    "type": "Bachelor's Thesis",
-    "status": "completed",
-    "description": "Explored neural style transfer techniques and developed a practical application for artistic image generation."
+    "title": "Cool-chic",
+    "type": "M",
+    "supervisors": ["Till Aczel"],
+    "semester": "HS 25",
+    "students": ["Jakub Parada"],
+    "status": "current"
   },
   {
-    "id": 4,
-    "student": "Bob Williams",
-    "title": "Attention Mechanisms in Transformer Architectures",
-    "year": 2023,
-    "type": "Master's Thesis",
-    "status": "completed",
-    "description": "Analyzed attention mechanisms in transformer models and proposed improvements for efficiency."
+    "title": "DiffLUT",
+    "type": "M",
+    "supervisors": ["Till Aczel", "Andreas Plesner"],
+    "semester": "HS 25",
+    "students": ["Simon Bührer"],
+    "status": "current"
+  },
+  {
+    "title": "Exploring normalized transformers",
+    "type": "M",
+    "supervisors": ["Andreas Plesner", "Till Aczel"],
+    "semester": "HS 25",
+    "students": ["Shakir Yousefi"],
+    "status": "current"
+  },
+  {
+    "title": "Faster DiffLogic",
+    "type": "S",
+    "supervisors": ["Andreas Plesner", "Till Aczel"],
+    "semester": "FS 25",
+    "students": ["Joshua Durrant"],
+    "status": "current"
+  },
+  {
+    "title": "Scalar Quantization for Audio Compression",
+    "type": "S",
+    "supervisors": ["Till Aczel", "Luca Lanzendörfer"],
+    "semester": "FS 25",
+    "students": ["Fei Gao"],
+    "status": "current"
+  },
+  {
+    "title": "View-Specific Video Compression",
+    "type": "M",
+    "supervisors": ["Till Aczel"],
+    "semester": "FS 25",
+    "students": ["Niklas Pohl"],
+    "status": "current"
+  },
+  {
+    "title": "Eigenvector-Masked Autoencoders",
+    "type": "B",
+    "supervisors": ["Till Aczel", "Andreas Plesner"],
+    "semester": "FS 25",
+    "students": ["Anja Buchmann"],
+    "status": "finished"
+  },
+  {
+    "title": "Deep Differentiable Logic Gate Networks: Neuron Collapse Through a Neural Architecture Search Perspective [confidential]",
+    "type": "S",
+    "supervisors": ["Andreas Plesner", "Till Aczel"],
+    "semester": "FS 25",
+    "students": ["Shakir Yousefi"],
+    "status": "finished"
+  },
+  {
+    "title": "Recurrent Deep Differentiable Logic Gate Networks [confidential]",
+    "type": "S",
+    "supervisors": ["Till Aczel", "Andreas Plesner"],
+    "semester": "FS 25",
+    "students": ["Simon Bührer"],
+    "status": "finished"
+  },
+  {
+    "title": "Effectiveness of Multi-Scale Aggregation for Adversarial Robustness",
+    "type": "B",
+    "supervisors": ["Andreas Plesner", "Till Aczel"],
+    "semester": "FS 25",
+    "students": ["Emerson Leonardo Azevedo Aguiar"],
+    "status": "finished"
+  },
+  {
+    "title": "Evaluating AI-Generated Image Detection Across Resolution and Complexity [confidential]",
+    "type": "B",
+    "supervisors": ["Till Aczel", "Andreas Plesner"],
+    "semester": "FS 25",
+    "students": ["Lorenzo Alessandro Vettor"],
+    "status": "finished"
+  },
+  {
+    "title": "The Impact of Training Data on Adversarial Examples [confidential]",
+    "type": "B",
+    "supervisors": ["Andreas Plesner", "Till Aczel"],
+    "semester": "FS 25",
+    "students": ["Marco Zimmerli"],
+    "status": "finished"
+  },
+  {
+    "title": "Light Differentiable Logic Gate Networks [confidential]",
+    "type": "S",
+    "supervisors": ["Till Aczel", "Andreas Plesner"],
+    "semester": "FS 25",
+    "students": ["Lukas Rüttgers"],
+    "status": "finished"
+  },
+  {
+    "title": "Scalability and Expressiveness of the Group-Sum Layer in Differentiable Logic Gate Networks [confidential]",
+    "type": "S",
+    "supervisors": ["Andreas Plesner", "Till Aczel"],
+    "semester": "FS 25",
+    "students": ["Sven Brändle"],
+    "status": "finished"
+  },
+  {
+    "title": "From E-Commerce to Editorials: Garment Retrieval for Virtual Photo-Shoot Applications [confidential]",
+    "type": "M",
+    "supervisors": ["Luca Lanzendörfer", "Till Aczel"],
+    "semester": "FS 25",
+    "students": ["Yannick Hauri"],
+    "status": "finished"
+  },
+  {
+    "title": "Fine-tuning Data Extraction from Large Language Models [confidential]",
+    "type": "M",
+    "supervisors": ["Andreas Plesner", "Till Aczel"],
+    "semester": "FS 25",
+    "students": ["Samuel Räber"],
+    "status": "finished"
+  },
+  {
+    "title": "A Dual Study on Analyzing Image Recompression Effects and Realism Assessment via Kolmogorov Complexity [confidential]",
+    "type": "B",
+    "supervisors": ["Till Aczel"],
+    "semester": "FS 25",
+    "students": ["Elif Özsoy"],
+    "status": "finished"
+  },
+  {
+    "title": "Synthetic Data Augmentation in Medical Image Classification: How Architecture Determines Utility",
+    "type": "B",
+    "supervisors": ["Andreas Plesner", "Till Aczel"],
+    "semester": "FS 25",
+    "students": ["Lars Ruschak"],
+    "status": "finished"
+  },
+  {
+    "title": "Automated Visual Foosball Tracking",
+    "type": "B",
+    "supervisors": ["Joël Mathys", "Till Aczel"],
+    "semester": "HS 24",
+    "students": ["Linus Baumberger"],
+    "status": "finished"
+  },
+  {
+    "title": "Human-aligned Compression for Robust Models [confidential]",
+    "type": "S",
+    "supervisors": ["Andreas Plesner", "Till Aczel"],
+    "semester": "HS 24",
+    "students": ["Samuel Räber"],
+    "status": "finished"
+  },
+  {
+    "title": "Beyond Overfitting: Encoding Shortcuts for Overfitted Image Codecs [confidential]",
+    "type": "M",
+    "supervisors": ["Till Aczel"],
+    "semester": "HS 24",
+    "students": ["Josep Borrell Tatche"],
+    "status": "finished"
+  },
+  {
+    "title": "View-Specific Video Compression [confidential]",
+    "type": "B",
+    "supervisors": ["Till Aczel"],
+    "semester": "HS 24",
+    "students": ["Sven Steffen"],
+    "status": "finished"
+  },
+  {
+    "title": "Wave Function Collapse for Graph Generation [confidential]",
+    "type": "S",
+    "supervisors": ["Till Aczel", "Joël Mathys"],
+    "semester": "HS 24",
+    "students": ["Soufiane Barrada"],
+    "status": "finished"
+  },
+  {
+    "title": "Jigsaw Puzzle Solver using Machine Learning [confidential]",
+    "type": "S",
+    "supervisors": ["Andreas Plesner", "Till Aczel"],
+    "semester": "FS 24",
+    "students": ["Lea Künstler"],
+    "status": "finished"
+  },
+  {
+    "title": "Exploring Typical and Uncertainty-Driven Active Learning on DINO Embeddings to Enhance Versatility [confidential]",
+    "type": "S",
+    "supervisors": ["Till Aczel", "Benjamin Estermann"],
+    "semester": "HS 23",
+    "students": ["Paul Doucet"],
+    "status": "finished"
+  },
+  {
+    "title": "DataComp Challenge",
+    "type": "G",
+    "supervisors": ["Till Aczel", "Benjamin Estermann"],
+    "semester": "HS 23",
+    "students": ["Dustin Brunner"],
+    "status": "finished"
+  },
+  {
+    "title": "SUPClust: Active Learning at the Boundaries",
+    "type": "S",
+    "supervisors": ["Benjamin Estermann", "Till Aczel"],
+    "semester": "HS 23",
+    "students": [],
+    "status": "finished"
   }
 ]
-

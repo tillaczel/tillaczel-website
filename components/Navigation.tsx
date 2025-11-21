@@ -6,10 +6,10 @@ import { motion } from 'framer-motion'
 
 const navItems = [
   { name: 'About', href: '#about' },
-  { name: 'Publications', href: '#publications' },
+  { name: 'Selected Publications', href: '#publications' },
   { name: 'Teaching', href: '#teaching' },
-  { name: 'Contact', href: '#contact' },
   { name: 'Resume', href: '#resume' },
+  { name: 'Contact', href: '#contact' },
 ]
 
 export default function Navigation() {
