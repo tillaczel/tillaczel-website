@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "student": "John Doe",
+    "title": "Deep Reinforcement Learning for Autonomous Navigation",
+    "year": 2024,
+    "type": "Master's Thesis",
+    "status": "completed",
+    "description": "Developed a deep reinforcement learning framework for autonomous robot navigation in complex environments."
+  },
+  {
+    "id": 2,
+    "student": "Jane Smith",
+    "title": "Federated Learning for Privacy-Preserving Machine Learning",
+    "year": 2024,
+    "type": "Master's Thesis",
+    "status": "in-progress",
+    "description": "Investigating federated learning approaches to preserve privacy while maintaining model performance."
+  },
+  {
+    "id": 3,
+    "student": "Alice Johnson",
+    "title": "Neural Style Transfer: From Theory to Practice",
+    "year": 2023,
+    "type": "Bachelor's Thesis",
+    "status": "completed",
+    "description": "Explored neural style transfer techniques and developed a practical application for artistic image generation."
+  },
+  {
+    "id": 4,
+    "student": "Bob Williams",
+    "title": "Attention Mechanisms in Transformer Architectures",
+    "year": 2023,
+    "type": "Master's Thesis",
+    "status": "completed",
+    "description": "Analyzed attention mechanisms in transformer models and proposed improvements for efficiency."
+  }
+]
+

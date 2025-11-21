@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Deep Learning for Natural Language Processing: A Comprehensive Survey",
+    "authors": "Your Name, Co-Author 1, Co-Author 2",
+    "venue": "Journal of Machine Learning Research",
+    "year": 2024,
+    "type": "journal",
+    "url": "https://example.com/paper1",
+    "code": "https://github.com/example/repo1",
+    "bibtex": "https://example.com/paper1.bib",
+    "abstract": "This paper presents a comprehensive survey of deep learning techniques applied to natural language processing tasks."
+  },
+  {
+    "id": 2,
+    "title": "Neural Architecture Search for Efficient Model Design",
+    "authors": "Your Name, Co-Author 1",
+    "venue": "International Conference on Machine Learning (ICML)",
+    "year": 2023,
+    "type": "conference",
+    "url": "https://example.com/paper2",
+    "bibtex": "https://example.com/paper2.bib",
+    "abstract": "We propose a novel neural architecture search method that significantly reduces computational requirements."
+  },
+  {
+    "id": 3,
+    "title": "Transfer Learning in Computer Vision: Recent Advances",
+    "authors": "Your Name, Co-Author 1, Co-Author 2, Co-Author 3",
+    "venue": "Computer Vision and Pattern Recognition (CVPR)",
+    "year": 2023,
+    "type": "conference",
+    "url": "https://example.com/paper3",
+    "code": "https://github.com/example/repo3",
+    "bibtex": "https://example.com/paper3.bib",
+    "abstract": "This work explores recent advances in transfer learning for computer vision applications."
+  }
+]
+
