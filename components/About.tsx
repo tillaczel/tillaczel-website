@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import { useState } from 'react'
 import newsData from '@/data/news.json'
 import { colors, colorCombinations } from '@/config/colors'
@@ -35,50 +34,20 @@ export default function About() {
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto"
       >
-        <div className="flex flex-col md:flex-row gap-8 items-center md:items-start mb-12">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex-1"
-          >
-            <h2 className={`text-3xl font-bold mb-4 ${colors.text.primary}`}>
-              Till Aczel
-            </h2>
-            <p className={`text-lg ${colorCombinations.section.subtitle} mb-4`}>
-              PhD Student — ETH Zurich
-            </p>
-
-            <p className={`${colorCombinations.section.body} leading-relaxed mb-4`}>
-              I research efficient, human-aligned learned image compression. My work sits at the intersection of neural codecs and perceptual quality: building compression systems that not only minimize bits but also produce reconstructions that real people judge as high-quality and faithful.
-            </p>
-
-            <p className={`${colorCombinations.section.body} leading-relaxed`}>
-              Human-aligned compression matters because rate–distortion metrics like MSE or PSNR often disagree with human perception. Small pixel-wise errors can be unnoticeable, while certain structured artifacts greatly reduce perceived quality. Achieving human-aligned outputs therefore requires perceptual objectives, robust decoders, and evaluation methods that correlate with what viewers actually prefer — which is hard because human judgements are subjective, task-dependent, and sensitive to subtle texture and structure cues.
-            </p>
-
-            <p className={`${colorCombinations.section.body} leading-relaxed`}>
-              Learned compression has made big strides in quality, but practical deployment still faces major shortcomings: inference is often slow, models are compute- and memory-hungry, and some approaches rely on large generative decoders that can hallucinate plausible—but incorrect—content. For learned codecs to be widely adopted they must match traditional codecs (JPEG, PNG, HEVC) in speed, latency, and energy cost while delivering superior perceptual quality. My research focuses on closing that gap: reducing model complexity and runtime, improving perceptual fidelity and robustness, and designing evaluation and training strategies that align algorithmic improvements with real human preferences.
-            </p>
-          </motion.div>
-          
+        <div className="flex flex-col md:flex-row-reverse gap-8 items-start mb-12">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="relative w-48 h-64 md:w-64 md:h-96 flex-shrink-0"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur-xl opacity-50 animate-pulse"></div>
             <div className="relative w-full h-full rounded-lg overflow-hidden border-4 border-gray-50 dark:border-[#0e1117] shadow-2xl">
               {!imageError ? (
-                <Image
+                <img
                   src={`${basePath}/profile.jpg`}
                   alt="Till Aczel"
-                  width={512}
-                  height={768}
                   className="w-full h-full object-cover"
-                  quality={100}
-                  priority
+                  loading="eager"
                   onError={() => setImageError(true)}
                 />
               ) : (
@@ -87,6 +56,32 @@ export default function About() {
                 </div>
               )}
             </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex-1"
+          >
+            <h2 className={`text-3xl font-bold mb-2 ${colors.text.primary}`}>
+              Till Aczel
+            </h2>
+            <p className={`${colorCombinations.section.subtitle} mb-6`}>
+              PhD student at ETH Zurich
+            </p>
+
+            <p className={`${colorCombinations.section.body} leading-relaxed mb-4`}>
+              I am a PhD student at ETH Zurich under the supervision of Prof. Dr. Roger Wattenhofer. I research efficient, human-aligned learned image compression, exploring how to build compression systems that not only minimize bits but also produce reconstructions that real people judge as high-quality and faithful.
+            </p>
+
+            <p className={`${colorCombinations.section.body} leading-relaxed mb-4`}>
+              My work sits at the intersection of neural codecs and perceptual quality, addressing the fundamental challenge that rate–distortion metrics like MSE or PSNR often disagree with human perception.
+            </p>
+
+            <p className={`${colorCombinations.section.body} leading-relaxed`}>
+              I focus on closing the gap between learned codecs and traditional codecs by reducing model complexity and runtime while improving perceptual fidelity, robustness, and evaluation methods that align with human preferences.
+            </p>
           </motion.div>
         </div>
 

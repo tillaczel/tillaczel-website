@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>404 - Page Not Found</title>
+    <script>
+      // Redirect to basePath
+      const basePath = '/tillaczel-website';
+      const path = window.location.pathname;
+      
+      // If we're not already at the basePath, redirect there
+      if (!path.startsWith(basePath)) {
+        window.location.replace(basePath + '/');
+      } else {
+        // If we're at basePath but page not found, redirect to home
+        window.location.replace(basePath + '/');
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
+
