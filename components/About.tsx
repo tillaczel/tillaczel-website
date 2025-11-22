@@ -59,7 +59,7 @@ export default function About() {
             <div className="relative w-full h-full rounded-lg overflow-hidden border-4 border-gray-50 dark:border-[#0e1117] shadow-2xl">
               {!imageError ? (
                 <img
-                  src={`${basePath}/profile.jpg`}
+                  src={`${basePath}/profile.jpg?quality=100&format=original`}
                   alt="Till Aczel"
                   className="w-full h-full object-cover"
                   style={{ 
@@ -73,8 +73,15 @@ export default function About() {
                     WebkitTransform: 'translateZ(0)',
                   }}
                   loading="eager"
-                  decoding="async"
+                  decoding="sync"
                   onError={() => setImageError(true)}
+                  onLoad={(e) => {
+                    // Prevent Cloudflare from re-optimizing after load
+                    const img = e.target as HTMLImageElement;
+                    if (img.complete) {
+                      img.style.imageRendering = 'auto';
+                    }
+                  }}
                 />
               ) : (
                 <div className="w-full h-full bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center text-6xl">
