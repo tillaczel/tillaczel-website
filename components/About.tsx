@@ -5,7 +5,7 @@ import { useState } from 'react'
 import newsData from '@/data/news.json'
 import { colors, colorCombinations } from '@/config/colors'
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/tillaczel-website'
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 interface NewsItem {
   id: number

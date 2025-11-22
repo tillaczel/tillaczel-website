@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
-const basePath = '/tillaczel-website'
+// Set to empty string for custom domain, or '/tillaczel-website' for GitHub Pages subpath
+const basePath = process.env.BASE_PATH || ''
 
 const nextConfig = {
   reactStrictMode: true,
