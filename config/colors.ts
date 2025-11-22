@@ -7,7 +7,7 @@ export const colors = {
       secondary: 'bg-white dark:bg-[#11141c]',
       tertiary: 'bg-gray-100 dark:bg-[#141922]',
       card: 'bg-white dark:bg-[#11141c]',
-      cardHighlight: 'bg-gray-100 dark:bg-[#1a2030]',
+      cardHighlight: 'bg-gray-200 dark:bg-[#1f2838]',
       modal: 'bg-white dark:bg-[#11141c]',
       modalOverlay: 'bg-black/80',
       nav: 'bg-white/80 dark:bg-[#0e1117]/95',

@@ -68,7 +68,7 @@ export default function Teaching() {
         >
           <div className="card">
             <div className="mb-6">
-              <h2 className={`text-3xl font-bold ${colors.accent.gradientText}`}>
+              <h2 className={`text-3xl font-bold ${colors.text.primary}`}>
                 🎓 Hands-On Deep Learning
               </h2>
             </div>
@@ -130,7 +130,7 @@ export default function Teaching() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <h2 className={`text-3xl font-bold mb-8 text-center ${colors.accent.gradientText}`}>
+          <h2 className={`text-3xl font-bold mb-8 text-center ${colors.text.primary}`}>
             Thesis Supervision
           </h2>
           
