@@ -8,7 +8,7 @@ import { colors, colorCombinations } from '@/config/colors'
 
 const navItems = [
   { name: 'About', href: '#about' },
-  { name: 'Selected Publications', href: '#publications' },
+  { name: 'Publications', href: '#publications' },
   { name: 'Teaching', href: '#teaching' },
   { name: 'Resume', href: '#resume' },
   { name: 'Contact', href: '#contact' },

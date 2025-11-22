@@ -33,8 +33,6 @@ export default function About() {
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto"
       >
-        <h1 className="section-title text-center mb-12">About Me</h1>
-        
         <div className="flex flex-col md:flex-row gap-8 items-center md:items-start mb-12">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -42,7 +40,7 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex-1"
           >
-            <h2 className={`text-3xl font-bold mb-4 ${colors.accent.gradientText}`}>
+            <h2 className={`text-3xl font-bold mb-4 ${colors.text.primary}`}>
               Till Aczel
             </h2>
             <p className={`text-lg ${colorCombinations.section.subtitle} mb-4`}>
