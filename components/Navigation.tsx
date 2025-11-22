@@ -60,7 +60,9 @@ export default function Navigation() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 border-b ${colors.border.primary} shadow-lg transition-all duration-300`}
+      className={`fixed top-0 left-0 right-0 z-50 border-b shadow-lg transition-all duration-300 ${
+        theme === 'dark' ? 'border-[#0e1117]' : colors.border.primary
+      }`}
       style={{
         backgroundColor: theme === 'dark' ? '#0e1117' : '#ffffff',
       }}
