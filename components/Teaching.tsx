@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import thesisData from '@/data/thesis-supervision.json'
+import { colors, colorCombinations } from '@/config/colors'
 
 interface Thesis {
   title: string
@@ -55,52 +56,52 @@ export default function Teaching() {
         >
           <div className="card">
             <div className="mb-6">
-              <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              <h2 className={`text-3xl font-bold ${colors.accent.gradientText}`}>
                 🎓 Hands-On Deep Learning
               </h2>
             </div>
 
             <div className="prose prose-invert max-w-none">
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+              <p className={`${colorCombinations.section.subtitle} leading-relaxed mb-6`}>
                 A practical deep learning course where students move from theory to real-world implementation. They learn to build models in PyTorch across image classification and generation, audio denoising, natural language processing, graph neural networks, and reinforcement learning.
               </p>
 
-              <div className="bg-gray-700/30 p-4 rounded-lg mb-6 border border-gray-600">
-                <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-                  <strong className="text-blue-400">Course Overhaul:</strong>
+              <div className={`${colors.background.cardHighlight} p-4 rounded-lg mb-6 ${colors.border.tertiary}`}>
+                <p className={`${colorCombinations.section.subtitle} text-sm leading-relaxed`}>
+                  <strong className={colors.accent.blue}>Course Overhaul:</strong>
                   When I took over the course, enrollment was around 30 students. I scaled it to 150, modernized the content, and reworked the assignments to ensure they meaningfully test understanding.
                 </p>
               </div>
 
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-blue-400 mb-3 text-lg">Key Improvements & Implementations</h4>
-                  <ul className="text-gray-700 dark:text-gray-300 space-y-2 text-sm">
+                  <h4 className={`font-semibold ${colors.accent.blue} mb-3 text-lg`}>Key Improvements & Implementations</h4>
+                  <ul className={`${colorCombinations.section.subtitle} space-y-2 text-sm`}>
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-400 mt-1">•</span>
+                      <span className={`${colors.accent.blue} mt-1`}>•</span>
                       <span>
                         <strong>Scalable Infrastructure:</strong> Built automated GPU-backed grading on the CodeExpert platform using SLURM. This infrastructure allows the course to scale from 30 to 150 students while keeping evaluations reliable and fair.
                       </span>
                     </li>
 
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-400 mt-1">•</span>
+                      <span className={`${colors.accent.blue} mt-1`}>•</span>
                       <span>
                         <strong>Discussions:</strong> Introduced interactive 2-on-1 sessions with students and TAs. These ensure genuine understanding despite ChatGPT assistance and give students space to clarify concepts through real dialogue.
                       </span>
                     </li>
 
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-400 mt-1">•</span>
+                      <span className={`${colors.accent.blue} mt-1`}>•</span>
                       <span>
                         <strong>Modernized Content:</strong> Added topics such as diffusion models, LoRA fine-tuning, next-token prediction pretraining, and other contemporary deep learning techniques to keep the course aligned with current research.
                       </span>
                     </li>
 
                     <li className="flex items-start gap-2">
-                      <span className="text-blue-400 mt-1">•</span>
+                      <span className={`${colors.accent.blue} mt-1`}>•</span>
                       <span>
-                        <strong>Competitive Challenge:</strong> Introduced weekly/biweekly model-building challenges with a public leaderboard, where students compete for the top 3 spots—making the course more engaging and motivating.
+                        <strong>Competitive Challenge:</strong> Introduced biweekly challenges with a public leaderboard, where students compete for the top 3 spots, making the course more engaging and motivating.
                       </span>
                     </li>
                   </ul>
@@ -117,7 +118,7 @@ export default function Teaching() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <h2 className="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <h2 className={`text-3xl font-bold mb-8 text-center ${colors.accent.gradientText}`}>
             Thesis Supervision
           </h2>
           
@@ -136,22 +137,22 @@ export default function Teaching() {
                     <div className="flex items-center gap-3 mb-2 flex-wrap">
                       <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
                         thesis.status === 'current'
-                          ? 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/50'
-                          : 'bg-green-500/20 text-green-400 border border-green-500/50'
+                          ? colors.status.current
+                          : colors.status.completed
                       }`}>
                         {thesis.status === 'current' ? 'In Progress' : '✓ Completed'}
                       </span>
-                      <span className="text-gray-500 dark:text-gray-500 text-sm">{getTypeLabel(thesis.type)}</span>
-                      <span className="text-gray-500 dark:text-gray-500 text-sm">• {formatSemester(thesis.semester)}</span>
+                      <span className={`${colors.text.muted} text-sm`}>{getTypeLabel(thesis.type)}</span>
+                      <span className={`${colors.text.muted} text-sm`}>• {formatSemester(thesis.semester)}</span>
                     </div>
-                    <h3 className="text-xl font-bold mb-2 text-blue-400">
+                    <h3 className={`text-xl font-bold mb-2 ${colors.accent.blue}`}>
                       {thesis.title.replace(' [confidential]', '')}
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-400 mb-1">
+                    <p className={`${colorCombinations.section.body} mb-1`}>
                       <span className="font-medium">Student:</span> {thesis.students.length > 0 ? thesis.students.join(', ') : 'N/A'}
                     </p>
                     {thesis.supervisors.filter(s => s !== 'Till Aczel').length > 0 && (
-                      <p className="text-gray-500 dark:text-gray-500 text-sm">
+                      <p className={`${colors.text.muted} text-sm`}>
                         <span className="font-medium">Co-supervised by:</span> {thesis.supervisors.filter(s => s !== 'Till Aczel').join(', ')}
                       </p>
                     )}

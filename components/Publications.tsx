@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import publicationsData from '@/data/publications.json'
+import { colors, colorCombinations } from '@/config/colors'
 
 interface Publication {
   title: string
@@ -87,20 +88,20 @@ export default function Publications() {
               <div className="flex items-start gap-4">
                 {/* Icon on the left */}
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500/20 to-purple-500/20 border border-blue-500/30 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className={`w-6 h-6 ${colors.accent.blue}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                 </div>
 
                 {/* Content */}
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold mb-2 text-blue-400 hover:text-blue-300 transition-colors">
+                  <h3 className={`text-lg font-bold mb-2 ${colorCombinations.publication.title} hover:opacity-80 transition-colors`}>
                     {pub.title}
                   </h3>
                   
-                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">{pub.authors}</p>
+                  <p className={`${colorCombinations.publication.authors} text-sm mb-2`}>{pub.authors}</p>
                   
-                  <p className="text-gray-500 dark:text-gray-500 italic text-sm mb-4">
+                  <p className={`${colorCombinations.publication.venue} italic text-sm mb-4`}>
                     {pub.venue} • {pub.year}
                   </p>
                   
@@ -111,7 +112,7 @@ export default function Publications() {
                         href={pub.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 text-sm text-blue-400 hover:text-blue-300 transition-colors"
+                        className={`flex items-center gap-1.5 text-sm ${colors.link.blue} transition-colors`}
                         aria-label="View paper"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -125,7 +126,7 @@ export default function Publications() {
                         href={pub.code}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 text-sm text-green-400 hover:text-green-300 transition-colors"
+                        className={`flex items-center gap-1.5 text-sm ${colors.link.green} transition-colors`}
                         aria-label="View code"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -138,7 +139,7 @@ export default function Publications() {
                       <button
                         type="button"
                         onClick={(e) => handleBibtexClick(e, pub, index)}
-                        className="flex items-center gap-1.5 text-sm text-purple-400 hover:text-purple-300 transition-colors"
+                        className={`flex items-center gap-1.5 text-sm ${colors.link.purple} transition-colors`}
                         aria-label="View BibTeX"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -154,10 +155,10 @@ export default function Publications() {
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: 'auto' }}
                       exit={{ opacity: 0, height: 0 }}
-                      className="mt-4 pt-4 border-t border-gray-300 dark:border-gray-700"
+                      className={`mt-4 pt-4 border-t ${colors.border.secondary}`}
                     >
-                      <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Abstract</p>
-                      <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">{pub.abstract}</p>
+                      <p className={`text-sm font-semibold ${colorCombinations.section.subtitle} mb-2`}>Abstract</p>
+                      <p className={`${colorCombinations.section.body} leading-relaxed text-sm`}>{pub.abstract}</p>
                     </motion.div>
                   )}
                 </div>
@@ -174,14 +175,14 @@ export default function Publications() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
-            className="bg-white dark:bg-gray-800 rounded-lg border border-gray-300 dark:border-gray-700 shadow-2xl max-w-3xl w-full max-h-[80vh] flex flex-col"
+            className={`${colors.background.modal} rounded-lg ${colors.border.secondary} shadow-2xl max-w-3xl w-full max-h-[80vh] flex flex-col`}
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center justify-between p-4 border-b border-gray-300 dark:border-gray-700">
-              <h3 className="text-xl font-bold text-blue-400 dark:text-blue-400">BibTeX</h3>
+            <div className={`flex items-center justify-between p-4 border-b ${colors.border.secondary}`}>
+              <h3 className={`text-xl font-bold ${colors.accent.blue}`}>BibTeX</h3>
               <button
                 onClick={handleCloseModal}
-                className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+                className={`${colors.button.text} transition-colors`}
                 aria-label="Close"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -190,11 +191,11 @@ export default function Publications() {
               </button>
             </div>
             <div className="p-4 flex-1 overflow-auto">
-              <pre className="text-sm text-gray-800 dark:text-gray-300 font-mono whitespace-pre-wrap bg-gray-100 dark:bg-gray-900 p-4 rounded border border-gray-300 dark:border-gray-700">
+              <pre className={`text-sm ${colors.code.text} font-mono whitespace-pre-wrap ${colors.code.background} p-4 rounded ${colors.code.border}`}>
                 {bibtexModal.text}
               </pre>
             </div>
-            <div className="flex items-center justify-end gap-3 p-4 border-t border-gray-700">
+            <div className={`flex items-center justify-end gap-3 p-4 border-t ${colors.border.secondary}`}>
               <button
                 onClick={handleCopyBibtex}
                 className="btn-primary inline-flex items-center gap-2 text-sm px-4 py-2"

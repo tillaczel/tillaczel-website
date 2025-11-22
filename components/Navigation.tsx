@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useTheme } from './ThemeProvider'
+import { colors, colorCombinations } from '@/config/colors'
 
 const navItems = [
   { name: 'About', href: '#about' },
@@ -59,9 +60,9 @@ export default function Navigation() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 ${colors.background.nav} backdrop-blur-md transition-all duration-300 ${
         isScrolled
-          ? 'shadow-lg border-b border-gray-200 dark:border-gray-800'
+          ? `shadow-lg border-b ${colors.border.primary}`
           : ''
       }`}
     >
@@ -75,8 +76,8 @@ export default function Navigation() {
                 onClick={(e) => handleClick(e, item.href)}
                 className={`relative px-3 py-2 text-sm font-medium transition-colors duration-200 ${
                   activeSection === item.href.substring(1)
-                    ? 'text-blue-400 dark:text-blue-400'
-                    : 'text-gray-700 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-400'
+                    ? colorCombinations.navLink.active
+                    : `${colorCombinations.navLink.inactive} ${colors.accent.blueHover}`
                 }`}
               >
                 {item.name}
@@ -96,7 +97,7 @@ export default function Navigation() {
           </div>
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-200"
+            className={`p-2 rounded-lg ${colors.button.secondary} ${colors.text.primary} transition-colors duration-200`}
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? (
@@ -122,7 +123,7 @@ function MobileMenu() {
     <>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white focus:outline-none"
+        className={`${colorCombinations.navLink.inactive} ${colors.accent.blueHover} focus:outline-none`}
         aria-label="Toggle menu"
       >
         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -137,7 +138,7 @@ function MobileMenu() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="absolute top-16 left-0 right-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-800"
+          className={`absolute top-16 left-0 right-0 ${colors.background.nav} backdrop-blur-md border-b ${colors.border.primary}`}
         >
           <div className="px-4 py-4 space-y-2">
             {navItems.map((item) => (
@@ -145,7 +146,7 @@ function MobileMenu() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-400 dark:hover:text-blue-400 transition-colors"
+                className={`block px-3 py-2 ${colorCombinations.navLink.inactive} ${colors.accent.blueHover} transition-colors`}
               >
                 {item.name}
               </Link>
