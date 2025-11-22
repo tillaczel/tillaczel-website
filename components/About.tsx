@@ -94,7 +94,7 @@ export default function About() {
             </p>
 
             <p className={`${colorCombinations.section.body} leading-relaxed text-justify`}>
-              Another focus is on efficiency and deployment: most generative models, including diffusion models, GANs, and VAEs, are computationally expensive. I design networks that "speak the language of computers," using architectures optimized for binary computation and hardware efficiency. This approach helps close the gap between learned and traditional codecs by reducing model complexity and runtime while improving perceptual quality and robustness.
+              Another focus is on efficiency and deployment: most generative models, including diffusion models, GANs, and VAEs, are computationally expensive. I design networks that "speak the language of computers", using architectures optimized for binary computation and hardware efficiency. This approach helps close the gap between learned and traditional codecs by reducing model complexity and runtime while improving perceptual quality and robustness.
             </p>
             </div>
           </div>
