@@ -34,13 +34,28 @@ export default function About() {
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto"
       >
-        <div className="flex flex-col md:flex-row-reverse gap-8 items-start mb-12">
+        <div className="mb-12">
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative w-48 h-64 md:w-64 md:h-96 flex-shrink-0"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="mb-6"
           >
+            <h2 className={`text-3xl font-bold mb-2 ${colors.text.primary}`}>
+              Till Aczel
+            </h2>
+            <p className={`${colorCombinations.section.subtitle} mb-6`}>
+              PhD student at ETH Zurich
+            </p>
+          </motion.div>
+
+          <div className="md:clearfix">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="relative w-56 h-80 md:w-80 md:h-[480px] mx-auto md:mx-0 md:float-right md:ml-6 md:mb-4 mb-6"
+            >
             <div className="relative w-full h-full rounded-lg overflow-hidden border-4 border-gray-50 dark:border-[#0e1117] shadow-2xl">
               {!imageError ? (
                 <img
@@ -67,31 +82,20 @@ export default function About() {
             </div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex-1"
-          >
-            <h2 className={`text-3xl font-bold mb-2 ${colors.text.primary}`}>
-              Till Aczel
-            </h2>
-            <p className={`${colorCombinations.section.subtitle} mb-6`}>
-              PhD student at ETH Zurich
+            <div>
+              <p className={`${colorCombinations.section.body} leading-relaxed mb-4 text-justify`}>
+              I am a PhD student at ETH Zurich under the supervision of Prof. Dr. Roger Wattenhofer. My research sits at the intersection of neural image compression and perceptual quality, aiming to build AI systems that are both efficient and aligned with human judgment of visual fidelity.
             </p>
 
-            <p className={`${colorCombinations.section.body} leading-relaxed mb-4`}>
-              I am a PhD student at ETH Zurich under the supervision of Prof. Dr. Roger Wattenhofer. My research sits at the intersection of neural image compression and perceptual quality, aiming to build AI systems that are both practically efficient and aligned with human judgment of visual fidelity.
+            <p className={`${colorCombinations.section.body} leading-relaxed mb-4 text-justify`}>
+              A key focus of my work is on evaluation: measuring the quality of generative AI is far from straightforward, because standard metrics often fail to capture what humans actually perceive. I develop methods and benchmarks to better assess perceptual fidelity, ensuring that model improvements translate into reconstructions that real people judge as high-quality and faithful.
             </p>
 
-            <p className={`${colorCombinations.section.body} leading-relaxed mb-4`}>
-              A key focus of my work is on evaluation: measuring the quality of generative AI is far from straightforward, because standard metrics like MSE or PSNR often fail to capture what humans actually perceive. I develop methods and benchmarks to better assess perceptual fidelity, ensuring that model improvements translate into reconstructions that real people judge as high-quality and faithful.
-            </p>
-
-            <p className={`${colorCombinations.section.body} leading-relaxed`}>
+            <p className={`${colorCombinations.section.body} leading-relaxed text-justify`}>
               Another focus is on efficiency and deployment: most generative models, including diffusion models, GANs, and VAEs, are computationally expensive. I design networks that "speak the language of computers," using architectures optimized for binary computation and hardware efficiency. This approach helps close the gap between learned and traditional codecs by reducing model complexity and runtime while improving perceptual quality and robustness.
             </p>
-          </motion.div>
+            </div>
+          </div>
         </div>
 
         <motion.div
