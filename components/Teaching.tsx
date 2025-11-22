@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
 import thesisData from '@/data/thesis-supervision.json'
 import { colors, colorCombinations } from '@/config/colors'
 
@@ -14,7 +15,18 @@ interface Thesis {
 }
 
 export default function Teaching() {
+  const [isDark, setIsDark] = useState(false)
   const theses = thesisData as Thesis[]
+  
+  useEffect(() => {
+    const checkDarkMode = () => {
+      setIsDark(document.documentElement.classList.contains('dark'))
+    }
+    checkDarkMode()
+    const observer = new MutationObserver(checkDarkMode)
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+    return () => observer.disconnect()
+  }, [])
   
   const getTypeLabel = (type: string) => {
     const types: Record<string, string> = {
@@ -135,11 +147,14 @@ export default function Teaching() {
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2 flex-wrap">
-                      <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                        thesis.status === 'current'
-                          ? colors.status.current
-                          : colors.status.completed
-                      }`}>
+                      <span 
+                        className="px-3 py-1 rounded-full text-xs font-semibold border"
+                        style={{
+                          backgroundColor: thesis.status === 'current' ? '#eab308' : '#22c55e',
+                          color: thesis.status === 'current' ? '#713f12' : '#14532d',
+                          borderColor: thesis.status === 'current' ? '#ca8a04' : '#16a34a',
+                        }}
+                      >
                         {thesis.status === 'current' ? 'In Progress' : '✓ Completed'}
                       </span>
                       <span className={`${colors.text.muted} text-sm`}>{getTypeLabel(thesis.type)}</span>

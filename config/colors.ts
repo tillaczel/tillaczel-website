@@ -67,8 +67,8 @@ export const colors = {
     },
   
     status: {
-      current: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/50 dark:bg-yellow-400/10 dark:text-yellow-300 dark:border-yellow-400/40',
-      completed: 'bg-green-500/20 text-green-400 border-green-500/50 dark:bg-green-400/10 dark:text-green-300 dark:border-green-400/40',
+      current: '!bg-yellow-500 !text-yellow-900 !border !border-yellow-600 dark:!bg-yellow-500 dark:!text-yellow-900 dark:!border-yellow-600',
+      completed: '!bg-green-500 !text-green-900 !border !border-green-600 dark:!bg-green-500 dark:!text-green-900 dark:!border-green-600',
     },
   
     code: {
