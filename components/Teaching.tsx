@@ -69,7 +69,7 @@ export default function Teaching() {
           <div className="card">
             <div className="mb-6">
               <h2 className={`text-3xl font-bold ${colors.text.primary}`}>
-                🎓 Hands-On Deep Learning
+                Hands-On Deep Learning
               </h2>
             </div>
 
