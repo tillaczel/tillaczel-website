@@ -10,14 +10,14 @@ export const colors = {
       cardHighlight: 'bg-gray-200 dark:bg-[#1f2838]',
       modal: 'bg-white dark:bg-[#11141c]',
       modalOverlay: 'bg-black/80',
-      nav: 'bg-white/80 dark:bg-[#0e1117]/95',
+      nav: 'bg-white dark:bg-[#0e1117]',
     },
   
     text: {
-      primary: 'text-gray-900 dark:text-gray-100',
-      secondary: 'text-gray-700 dark:text-gray-300',
-      tertiary: 'text-gray-600 dark:text-gray-400',
-      muted: 'text-gray-500 dark:text-gray-500',
+      primary: 'text-gray-800 dark:text-gray-200',
+      secondary: 'text-gray-600 dark:text-gray-300',
+      tertiary: 'text-gray-500 dark:text-gray-400',
+      muted: 'text-gray-400 dark:text-gray-500',
       inverse: 'text-gray-100 dark:text-gray-900',
     },
   
@@ -29,31 +29,30 @@ export const colors = {
     },
   
     accent: {
-      blue: 'text-blue-400 dark:text-blue-300',
-      blueHover: 'hover:text-blue-300 dark:hover:text-blue-200',
-      purple: 'text-purple-400 dark:text-purple-300',
-      purpleHover: 'hover:text-purple-300 dark:hover:text-purple-200',
-      pink: 'text-pink-400 dark:text-pink-300',
-      green: 'text-green-400 dark:text-green-300',
-      greenHover: 'hover:text-green-300 dark:hover:text-green-200',
-      yellow: 'text-yellow-400 dark:text-yellow-300',
-      yellowHover: 'hover:text-yellow-300 dark:hover:text-yellow-200',
-      gradient: 'bg-gradient-to-r from-blue-400 to-purple-500',
-      gradientText: 'bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent',
+      blue: 'text-blue-500 dark:text-blue-400',
+      blueHover: 'hover:text-blue-400 dark:hover:text-blue-300',
+      cyan: 'text-cyan-500 dark:text-cyan-400',
+      cyanHover: 'hover:text-cyan-400 dark:hover:text-cyan-300',
+      green: 'text-green-500 dark:text-green-400',
+      greenHover: 'hover:text-green-400 dark:hover:text-green-300',
+      yellow: 'text-yellow-500 dark:text-yellow-400',
+      yellowHover: 'hover:text-yellow-400 dark:hover:text-yellow-300',
+      gradient: 'bg-gradient-to-r from-blue-500 to-cyan-500',
+      gradientText: 'bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent',
     },
   
     button: {
-      primary: 'bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500',
+      primary: 'bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500',
       secondary: 'bg-gray-200 dark:bg-[#1c2633] hover:bg-gray-300 dark:hover:bg-[#233044]',
       text: 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white',
     },
     
     // Link colors for contact and other specific use cases
     link: {
-      blue: 'text-blue-400 dark:text-blue-300 hover:text-blue-300 dark:hover:text-blue-200',
-      green: 'text-green-400 dark:text-green-300 hover:text-green-300 dark:hover:text-green-200',
-      purple: 'text-purple-400 dark:text-purple-300 hover:text-purple-300 dark:hover:text-purple-200',
-      yellow: 'text-yellow-400 dark:text-yellow-300 hover:text-yellow-300 dark:hover:text-yellow-200',
+      blue: 'text-blue-500 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-300',
+      green: 'text-green-500 dark:text-green-400 hover:text-green-400 dark:hover:text-green-300',
+      cyan: 'text-cyan-500 dark:text-cyan-400 hover:text-cyan-400 dark:hover:text-cyan-300',
+      yellow: 'text-yellow-500 dark:text-yellow-400 hover:text-yellow-400 dark:hover:text-yellow-300',
       github: 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white',
     },
     
@@ -61,7 +60,7 @@ export const colors = {
     linkBg: {
       blue: 'bg-blue-500/20 border-blue-500/30',
       green: 'bg-green-500/20 border-green-500/30',
-      purple: 'bg-purple-500/20 border-purple-500/30',
+      cyan: 'bg-cyan-500/20 border-cyan-500/30',
       yellow: 'bg-yellow-500/20 border-yellow-500/30',
       github: 'bg-gray-700/50 dark:bg-[#1c2633]/50 border-gray-600/50 dark:border-[#233044]/50',
     },

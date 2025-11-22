@@ -60,11 +60,10 @@ export default function Navigation() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 ${colors.background.nav} backdrop-blur-md transition-all duration-300 ${
-        isScrolled
-          ? `shadow-lg border-b ${colors.border.primary}`
-          : ''
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 border-b ${colors.border.primary} shadow-lg transition-all duration-300`}
+      style={{
+        backgroundColor: theme === 'dark' ? '#0e1117' : '#ffffff',
+      }}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -84,7 +83,7 @@ export default function Navigation() {
                 {activeSection === item.href.substring(1) && (
                   <motion.div
                     layoutId="activeSection"
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500"
+                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-500"
                     initial={false}
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
@@ -118,6 +117,7 @@ export default function Navigation() {
 
 function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
+  const { theme } = useTheme()
 
   return (
     <>
@@ -138,7 +138,13 @@ function MobileMenu() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className={`absolute top-16 left-0 right-0 ${colors.background.nav} backdrop-blur-md border-b ${colors.border.primary}`}
+              className={`absolute top-16 left-0 right-0 border-b ${colors.border.primary}`}
+              style={{
+                backgroundColor: theme === 'dark' ? '#0e1117' : '#ffffff',
+              }}
+          style={{
+            backgroundColor: theme === 'dark' ? '#0e1117' : '#ffffff',
+          }}
         >
           <div className="px-4 py-4 space-y-2">
             {navItems.map((item) => (

@@ -67,7 +67,7 @@ export default function About() {
             className="relative w-48 h-64 md:w-64 md:h-96 flex-shrink-0"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur-xl opacity-50 animate-pulse"></div>
-            <div className="relative w-full h-full rounded-lg overflow-hidden border-4 border-blue-500 shadow-2xl">
+            <div className="relative w-full h-full rounded-lg overflow-hidden border-4 border-gray-50 dark:border-[#0e1117] shadow-2xl">
               {!imageError ? (
                 <Image
                   src="/profile.jpg"
@@ -80,7 +80,7 @@ export default function About() {
                   onError={() => setImageError(true)}
                 />
               ) : (
-                <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center text-6xl">
+                <div className="w-full h-full bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center text-6xl">
                   👤
                 </div>
               )}

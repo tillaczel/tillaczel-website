@@ -48,7 +48,7 @@
   }
   
   .section-title {
-    @apply text-4xl sm:text-5xl font-bold mb-8 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent;
+    @apply text-4xl sm:text-5xl font-bold mb-8 text-gray-800 dark:text-white;
   }
   
   .card {
@@ -56,7 +56,7 @@
   }
   
   .btn-primary {
-    @apply px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:from-blue-500 hover:to-purple-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/50;
+    @apply px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-semibold hover:from-blue-500 hover:to-cyan-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/50;
   }
   
   .btn-secondary {

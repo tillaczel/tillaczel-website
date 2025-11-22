@@ -87,7 +87,7 @@ export default function Publications() {
             >
               <div className="flex items-start gap-4">
                 {/* Icon on the left */}
-                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500/20 to-purple-500/20 border border-blue-500/30 flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-500/30 flex items-center justify-center">
                   <svg className={`w-6 h-6 ${colors.accent.blue}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
@@ -139,7 +139,7 @@ export default function Publications() {
                       <button
                         type="button"
                         onClick={(e) => handleBibtexClick(e, pub, index)}
-                        className={`flex items-center gap-1.5 text-sm ${colors.link.purple} transition-colors`}
+                        className={`flex items-center gap-1.5 text-sm ${colors.link.cyan} transition-colors`}
                         aria-label="View BibTeX"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

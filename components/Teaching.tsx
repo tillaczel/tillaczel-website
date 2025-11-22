@@ -134,6 +134,19 @@ export default function Teaching() {
             Thesis Supervision
           </h2>
           
+          <p className={`${colorCombinations.section.body} mb-6 text-center`}>
+            If you want to pursue a thesis with me, please check my{' '}
+            <a 
+              href="https://disco.ethz.ch/members/taczel" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={`${colors.accent.blue} ${colors.accent.blueHover} underline`}
+            >
+              university page
+            </a>
+            . I welcome original ideas.
+          </p>
+          
           <div className="space-y-4">
             {theses.map((thesis, index) => (
               <motion.div

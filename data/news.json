@@ -2,37 +2,37 @@
   {
     "id": 1,
     "date": "2023-07-01",
-    "title": "Started PhD",
-    "description": "Began my PhD at ETH Zurich, supervised by Roger Wattenhofer."
+    "title": "Embarked on PhD Journey",
+    "description": "Officially began my PhD at ETH Zurich under the mentorship of Roger Wattenhofer."
   },
   {
     "id": 2,
     "date": "2023-12-05",
-    "title": "Became Head TA",
-    "description": "Appointed head teaching assistant for the Hands-On Deep Learning course."
+    "title": "Appointed Head TA",
+    "description": "Became head teaching assistant for the Hands-On Deep Learning course, completely overhauling and modernizing the curriculum to make it more engaging, challenging, and relevant for students."
   },
   {
     "id": 3,
     "date": "2024-06-13",
     "title": "PhD Aptitude Colloquium Passed",
-    "description": "Successfully passed my Aptitude Colloquium, marking my definitive admission at ETH Zurich as a PhD student."
+    "description": "Successfully passed my Aptitude Colloquium, securing my official status as a PhD student at ETH Zurich and taking the next step in my research journey."
   },
   {
     "id": 4,
     "date": "2024-11-26",
     "title": "DCC Paper Accepted",
-    "description": "Our paper on Conditional Hallucinations for Image Compression was accepted at the 2025 Data Compression Conference (DCC)."
+    "description": "Excited to have our paper on Conditional Hallucinations for Image Compression accepted at the 2025 Data Compression Conference (DCC)."
   },
   {
     "id": 5,
-    "date": "2025-09-25",
-    "title": "Mind the Gap Accepted",
-    "description": "Our paper 'Mind the Gap: Removing the Discretization Gap in Differentiable Logic Gate Networks' was accepted."
+    "date": "2025-04-01",
+    "title": "CLIC2025 Organizing Team",
+    "description": "Joined the CLIC2025 organizing team and led the human evaluation study for the challenge."
   },
   {
     "id": 6,
-    "date": "2025-04-01",
-    "title": "CLIC2025 Organizing Team",
-    "description": "Part of the CLIC2025 organizing team."
+    "date": "2025-09-25",
+    "title": "Mind the Gap Paper Accepted",
+    "description": "Our work, 'Mind the Gap: Removing the Discretization Gap in Differentiable Logic Gate Networks,' was accepted for publication."
   }
 ]

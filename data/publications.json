@@ -46,7 +46,7 @@
   {
     "title": "HyperCool: Reducing Encoding Cost in Overfitted Codecs with Hypernetworks",
     "authors": "Borrell-Tatché, Pep; Aczel, Till; Ladune, Théo; Wattenhofer, Roger",
-    "venue": "arXiv preprint arXiv:2509.18748",
+    "venue": "Machine Learning for Wireless Communication and Networks @ AAAI",
     "year": 2025,
     "type": "preprint",
     "url": "https://arxiv.org/abs/2509.18748",
@@ -57,7 +57,7 @@
   {
     "title": "IC-DLC: Differentiable Logic Circuits for Hardware-Friendly Image Compression",
     "authors": "Aczel, Till; Jenny, David F.; Bührer, Simon Jonas; Plesner, Andreas; Di Maio, Antonio; Wattenhofer, Roger",
-    "venue": "Machine Learning for Wireless Communication and Networks (ML4Wireless @ AAAI)",
+    "venue": "Machine Learning for Wireless Communication and Networks @ AAAI",
     "year": 2026,
     "type": "conference",
     "url": "",
