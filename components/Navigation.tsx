@@ -138,10 +138,7 @@ function MobileMenu() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-              className={`absolute top-16 left-0 right-0 border-b ${colors.border.primary}`}
-              style={{
-                backgroundColor: theme === 'dark' ? '#0e1117' : '#ffffff',
-              }}
+          className={`absolute top-16 left-0 right-0 border-b ${colors.border.primary}`}
           style={{
             backgroundColor: theme === 'dark' ? '#0e1117' : '#ffffff',
           }}
