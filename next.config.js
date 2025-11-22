@@ -5,6 +5,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Uncomment the line below if deploying to GitHub Pages with a repository name
+  // basePath: '/tillaczel-website',
+  // trailingSlash: true,
 }
 
 module.exports = nextConfig
