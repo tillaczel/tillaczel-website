@@ -23,7 +23,10 @@ export default function About() {
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString)
-    return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+    const month = date.toLocaleDateString('en-US', { month: 'short' })
+    const day = date.toLocaleDateString('en-US', { day: 'numeric' })
+    const year = date.toLocaleDateString('en-US', { year: 'numeric' })
+    return { month, day, year }
   }
 
   return (
@@ -113,7 +116,9 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <div className="space-y-3">
-            {news.map((item, index) => (
+            {news.map((item, index) => {
+              const dateParts = formatDate(item.date)
+              return (
               <motion.div
                 key={item.id}
                 initial={{ opacity: 0, x: -20 }}
@@ -121,12 +126,16 @@ export default function About() {
                 transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
                 className="flex items-start gap-4 py-2"
               >
-                <span className={`text-xs ${colors.text.muted} w-32 flex-shrink-0`}>{formatDate(item.date)}</span>
+                <span className={`text-xs ${colors.text.muted} w-32 flex-shrink-0 font-mono`}>
+                  <span className="inline-block w-14">{dateParts.month} {dateParts.day},</span>
+                  <span>{dateParts.year}</span>
+                </span>
                 <p className={`text-sm ${colorCombinations.section.body} flex-1`}>
                   {item.description}
                 </p>
               </motion.div>
-            ))}
+              )
+            })}
           </div>
         </motion.div>
       </motion.div>
