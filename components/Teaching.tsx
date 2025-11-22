@@ -78,16 +78,13 @@ export default function Teaching() {
                 A practical deep learning course where students move from theory to real-world implementation. They learn to build models in PyTorch across image classification and generation, audio denoising, natural language processing, graph neural networks, and reinforcement learning.
               </p>
 
-              <div className={`${colors.background.cardHighlight} p-4 rounded-lg mb-6 ${colors.border.tertiary}`}>
-                <p className={`${colorCombinations.section.subtitle} text-sm leading-relaxed`}>
-                  <strong className={colors.accent.blue}>Course Overhaul:</strong>
-                  When I took over the course, enrollment was around 30 students. I scaled it to 150, modernized the content, and reworked the assignments to ensure they meaningfully test understanding.
-                </p>
-              </div>
+              <p className={`${colorCombinations.section.subtitle} leading-relaxed mb-6`}>
+                <strong className={colors.accent.blue}>Course Overhaul:</strong> When I took over the course, enrollment was around 30 students. I scaled it to 150, modernized the content, and reworked the assignments to ensure they meaningfully test understanding.
+              </p>
 
               <div className="space-y-6">
                 <div>
-                  <h4 className={`font-semibold ${colors.accent.blue} mb-3 text-lg`}>Key Improvements & Implementations</h4>
+                  <h4 className={`font-semibold ${colors.accent.blue} mb-3 text-lg`}>Key Improvements</h4>
                   <ul className={`${colorCombinations.section.subtitle} space-y-2 text-sm`}>
                     <li className="flex items-start gap-2">
                       <span className={`${colors.accent.blue} mt-1`}>•</span>
