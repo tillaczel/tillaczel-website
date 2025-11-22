@@ -58,30 +58,24 @@ export default function About() {
             >
             <div className="relative w-full h-full rounded-lg overflow-hidden border-4 border-gray-50 dark:border-[#0e1117] shadow-2xl">
               {!imageError ? (
-                <picture>
-                  <source
-                    srcSet={`${basePath}/profile.jpg`}
-                    type="image/jpeg"
-                  />
-                  <img
-                    src={`${basePath}/profile.jpg`}
-                    alt="Till Aczel"
-                    className="w-full h-full object-cover"
-                    style={{ 
-                      imageRendering: 'auto',
-                      willChange: 'auto',
-                      backfaceVisibility: 'hidden',
-                      WebkitBackfaceVisibility: 'hidden',
-                      transform: 'translateZ(0)',
-                      WebkitFontSmoothing: 'antialiased',
-                      MozOsxFontSmoothing: 'grayscale',
-                      WebkitTransform: 'translateZ(0)',
-                    }}
-                    loading="eager"
-                    decoding="async"
-                    onError={() => setImageError(true)}
-                  />
-                </picture>
+                <img
+                  src={`${basePath}/profile.jpg`}
+                  alt="Till Aczel"
+                  className="w-full h-full object-cover"
+                  style={{ 
+                    imageRendering: 'auto',
+                    willChange: 'auto',
+                    backfaceVisibility: 'hidden',
+                    WebkitBackfaceVisibility: 'hidden',
+                    transform: 'translateZ(0)',
+                    WebkitFontSmoothing: 'antialiased',
+                    MozOsxFontSmoothing: 'grayscale',
+                    WebkitTransform: 'translateZ(0)',
+                  }}
+                  loading="eager"
+                  decoding="async"
+                  onError={() => setImageError(true)}
+                />
               ) : (
                 <div className="w-full h-full bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center text-6xl">
                   👤
