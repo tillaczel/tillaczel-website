@@ -81,15 +81,15 @@ export default function About() {
             </p>
 
             <p className={`${colorCombinations.section.body} leading-relaxed mb-4`}>
-              I am a PhD student at ETH Zurich under the supervision of Prof. Dr. Roger Wattenhofer. I research efficient, human-aligned learned image compression, exploring how to build compression systems that not only minimize bits but also produce reconstructions that real people judge as high-quality and faithful.
+              I am a PhD student at ETH Zurich under the supervision of Prof. Dr. Roger Wattenhofer. My research sits at the intersection of neural image compression and perceptual quality, aiming to build AI systems that are both practically efficient and aligned with human judgment of visual fidelity.
             </p>
 
             <p className={`${colorCombinations.section.body} leading-relaxed mb-4`}>
-              My work sits at the intersection of neural codecs and perceptual quality, addressing the fundamental challenge that rate–distortion metrics like MSE or PSNR often disagree with human perception.
+              A key focus of my work is on evaluation: measuring the quality of generative AI is far from straightforward, because standard metrics like MSE or PSNR often fail to capture what humans actually perceive. I develop methods and benchmarks to better assess perceptual fidelity, ensuring that model improvements translate into reconstructions that real people judge as high-quality and faithful.
             </p>
 
             <p className={`${colorCombinations.section.body} leading-relaxed`}>
-              I focus on closing the gap between learned codecs and traditional codecs by reducing model complexity and runtime while improving perceptual fidelity, robustness, and evaluation methods that align with human preferences.
+              Another focus is on efficiency and deployment: most generative models, including diffusion models, GANs, and VAEs, are computationally expensive. I design networks that "speak the language of computers," using architectures optimized for binary computation and hardware efficiency. This approach helps close the gap between learned and traditional codecs by reducing model complexity and runtime while improving perceptual quality and robustness.
             </p>
           </motion.div>
         </div>
