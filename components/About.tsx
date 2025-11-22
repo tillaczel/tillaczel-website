@@ -115,6 +115,7 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
+          <h3 className={`text-2xl font-bold mb-6 ${colors.text.primary}`}>News</h3>
           <div className="space-y-3">
             {news.map((item, index) => {
               const dateParts = formatDate(item.date)
@@ -126,8 +127,8 @@ export default function About() {
                 transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
                 className="flex items-start gap-4 py-2"
               >
-                <span className={`text-xs ${colors.text.muted} w-32 flex-shrink-0 font-mono`}>
-                  <span className="inline-block w-14">{dateParts.month} {dateParts.day},</span>
+                <span className={`text-sm font-bold ${colors.text.muted} w-40 flex-shrink-0 font-mono`}>
+                  <span className="inline-block w-16">{dateParts.month} {dateParts.day},</span>
                   <span>{dateParts.year}</span>
                 </span>
                 <p className={`text-sm ${colorCombinations.section.body} flex-1`}>
