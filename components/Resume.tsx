@@ -2,12 +2,14 @@
 
 import { motion } from 'framer-motion'
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/tillaczel-website'
+
 export default function Resume() {
   const handleDownload = () => {
     // Create a placeholder PDF or link to actual PDF
     // For now, we'll create a simple download link
     const link = document.createElement('a')
-    link.href = '/resume.pdf' // Placeholder - user should add their actual PDF
+    link.href = `${basePath}/resume.pdf`
     link.download = 'resume.pdf'
     link.click()
   }
@@ -30,7 +32,7 @@ export default function Resume() {
         >
           <div className="card p-0 overflow-hidden">
             <iframe
-              src="/resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+              src={`${basePath}/resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
               className="w-full h-[1250px] border-0"
               title="Resume PDF"
             />
