@@ -47,7 +47,16 @@ export default function About() {
                   src={`${basePath}/profile.jpg`}
                   alt="Till Aczel"
                   className="w-full h-full object-cover"
+                  style={{ 
+                    imageRendering: 'auto',
+                    willChange: 'auto',
+                    backfaceVisibility: 'hidden',
+                    transform: 'translateZ(0)',
+                    WebkitFontSmoothing: 'antialiased',
+                    MozOsxFontSmoothing: 'grayscale',
+                  }}
                   loading="eager"
+                  decoding="sync"
                   onError={() => setImageError(true)}
                 />
               ) : (
