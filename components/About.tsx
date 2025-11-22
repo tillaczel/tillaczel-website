@@ -6,6 +6,8 @@ import { useState } from 'react'
 import newsData from '@/data/news.json'
 import { colors, colorCombinations } from '@/config/colors'
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/tillaczel-website'
+
 interface NewsItem {
   id: number
   date: string
@@ -70,7 +72,7 @@ export default function About() {
             <div className="relative w-full h-full rounded-lg overflow-hidden border-4 border-gray-50 dark:border-[#0e1117] shadow-2xl">
               {!imageError ? (
                 <Image
-                  src="/profile.jpg"
+                  src={`${basePath}/profile.jpg`}
                   alt="Till Aczel"
                   width={512}
                   height={768}
