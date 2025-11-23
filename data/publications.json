@@ -1,5 +1,16 @@
 [
   {
+    "title": "Efficient Bayesian Inference from Noisy Pairwise Comparisons",
+    "authors": "Aczel, Till; Theis, Lucas; Roger, Wattenhofer",
+    "venue": "arXiv preprint arXiv:2510.09333",
+    "year": 2025,
+    "type": "preprint",
+    "url": "https://arxiv.org/abs/2510.09333",
+    "code": "",
+    "bibtex": "@misc{aczel2025efficientbayesianinferencenoisypairwisecomparisons,\n      title={Efficient Bayesian Inference from Noisy Pairwise Comparisons},\n      author={Till Aczel and Lucas Theis and Roger Wattenhofer},\n      year={2025},\n      eprint={2510.09333},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2510.09333}\n}",
+    "abstract": ""
+  },
+  {
     "title": "Mind the Gap: Removing the Discretization Gap in Differentiable Logic Gate Networks",
     "authors": "Yousefi, Shakir; Plesner, Andreas; Aczel, Till; Wattenhofer, Roger",
     "venue": "Neural Information Processing Systems (NeurIPS)",

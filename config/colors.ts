@@ -71,9 +71,9 @@ export const colors = {
     },
   
     code: {
-      background: 'bg-gray-100 dark:bg-[#0b0e13]',
-      text: 'text-gray-800 dark:text-gray-300',
-      border: 'border-gray-300 dark:border-[#1c2633]',
+      background: 'bg-gray-900 dark:bg-[#0b0e13]',
+      text: 'text-gray-100 dark:text-gray-300',
+      border: 'border-gray-700 dark:border-[#1c2633]',
     },
   } as const
   
