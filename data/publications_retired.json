@@ -1,7 +1,7 @@
 [
   {
     "title": "Efficient Multimodal Alignment: To Freeze or Not to Freeze?",
-    "authors": "Aczel, Till; Wattenhofer, Roger",
+    "authors": "Till Aczel; Roger Wattenhofer",
     "venue": "UniReps: the First Workshop on Unifying Representations in Neural Models",
     "year": 2023,
     "type": "conference",
@@ -12,7 +12,7 @@
   },
   {
     "title": "SUPClust: Active learning at the boundaries",
-    "authors": "Ono, Yuta; Aczel, Till; Estermann, Benjamin; Wattenhofer, Roger",
+    "authors": "Yuta Ono; Till Aczel; Benjamin Estermann; Roger Wattenhofer",
     "venue": "arXiv preprint arXiv:2403.03741",
     "year": 2024,
     "type": "preprint",
@@ -23,7 +23,7 @@
   },
   {
     "title": "Bridging diversity and uncertainty in active learning with self-supervised pre-training",
-    "authors": "Doucet, Paul; Estermann, Benjamin; Aczel, Till; Wattenhofer, Roger",
+    "authors": "Paul Doucet; Benjamin Estermann; Till Aczel; Roger Wattenhofer",
     "venue": "arXiv preprint arXiv:2403.03728",
     "year": 2024,
     "type": "preprint",
@@ -34,7 +34,7 @@
   },
   {
     "title": "Human Aligned Compression for Robust Models",
-    "authors": "Räber, Samuel; Plesner, Andreas; Aczel, Till; Wattenhofer, Roger",
+    "authors": "Samuel Räber; Andreas Plesner; Till Aczel; Roger Wattenhofer",
     "venue": "arXiv preprint arXiv:2504.12255",
     "year": 2025,
     "type": "preprint",
@@ -45,7 +45,7 @@
   },
   {
     "title": "Keep It Real: Challenges in Attacking Compression-Based Adversarial Purification",
-    "authors": "Räber, Samuel; Aczel, Till; Plesner, Andreas; Wattenhofer, Roger",
+    "authors": "Samuel Räber; Till Aczel; Andreas Plesner; Roger Wattenhofer",
     "venue": "arXiv preprint arXiv:2508.05489",
     "year": 2025,
     "type": "preprint",
@@ -56,7 +56,7 @@
   },
   {
     "title": "Recurrent Deep Differentiable Logic Gate Networks",
-    "authors": "Bührer, Simon; Plesner, Andreas; Aczel, Till; Wattenhofer, Roger",
+    "authors": "Simon Bührer; Andreas Plesner; Till Aczel; Roger Wattenhofer",
     "venue": "arXiv preprint arXiv:2508.06097",
     "year": 2025,
     "type": "preprint",
@@ -67,7 +67,7 @@
   },
   {
     "title": "From MNIST to ImageNet: Understanding the Scalability Boundaries of Differentiable Logic Gate Networks",
-    "authors": "Brändle, Sven; Aczel, Till; Plesner, Andreas; Wattenhofer, Roger",
+    "authors": "Sven Brändle; Till Aczel; Andreas Plesner; Roger Wattenhofer",
     "venue": "arXiv preprint arXiv:2509.25933",
     "year": 2025,
     "type": "preprint",
@@ -78,7 +78,7 @@
   },
   {
     "title": "Virtual Fashion Photo-Shoots: Building a Large-Scale Garment-Lookbook Dataset",
-    "authors": "Hauri, Yannick; Lanzendörfer, Luca A; Aczel, Till",
+    "authors": "Yannick Hauri; Luca A Lanzendörfer; Till Aczel",
     "venue": "arXiv preprint arXiv:2510.00633",
     "year": 2025,
     "type": "preprint",
@@ -89,7 +89,7 @@
   },
   {
     "title": "The Impact of Training Data on Adversarial Robustness",
-    "authors": "Zimmerli, Marco; Plesner, Andreas; Aczel, Till; Wattenhofer, Roger",
+    "authors": "Marco Zimmerli; Andreas Plesner; Till Aczel; Roger Wattenhofer",
     "venue": "arXiv preprint arXiv:2509.25927",
     "year": 2025,
     "type": "preprint",

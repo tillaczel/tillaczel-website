@@ -1,7 +1,7 @@
 [
   {
     "title": "Efficient Bayesian Inference from Noisy Pairwise Comparisons",
-    "authors": "Aczel, Till; Theis, Lucas; Roger, Wattenhofer",
+    "authors": "Till Aczel; Lucas Theis; Roger Wattenhofer",
     "venue": "arXiv preprint arXiv:2510.09333",
     "year": 2025,
     "type": "preprint",
@@ -12,7 +12,7 @@
   },
   {
     "title": "Mind the Gap: Removing the Discretization Gap in Differentiable Logic Gate Networks",
-    "authors": "Yousefi, Shakir; Plesner, Andreas; Aczel, Till; Wattenhofer, Roger",
+    "authors": "Shakir Yousefi; Andreas Plesner; Till Aczel; Roger Wattenhofer",
     "venue": "Neural Information Processing Systems (NeurIPS)",
     "year": 2025,
     "type": "conference",
@@ -23,7 +23,7 @@
   },
   {
     "title": "Conditional Hallucinations for Image Compression",
-    "authors": "Aczel, Till; Wattenhofer, Roger",
+    "authors": "Till Aczel; Roger Wattenhofer",
     "venue": "2025 Data Compression Conference (DCC)",
     "year": 2025,
     "type": "conference",
@@ -34,7 +34,7 @@
   },
   {
     "title": "The Unwinnable Arms Race of AI Image Detection",
-    "authors": "Aczel, Till; Vettor, Lorenzo; Plesner, Andreas; Wattenhofer, Roger",
+    "authors": "Till Aczel; Lorenzo Vettor; Andreas Plesner; Roger Wattenhofer",
     "venue": "What Makes a Good Video: Next Practices in Video Generation and Evaluation Workshop @ NeurIPS",
     "year": 2025,
     "type": "conference",
@@ -45,7 +45,7 @@
   },
   {
     "title": "Light Differentiable Logic Gate Networks",
-    "authors": "Rüttgers, Lukas; Aczel, Till; Plesner, Andreas; Wattenhofer, Roger",
+    "authors": "Lukas Rüttgers; Till Aczel; Andreas Plesner; Roger Wattenhofer",
     "venue": "arXiv preprint arXiv:2510.03250",
     "year": 2025,
     "type": "preprint",
@@ -56,7 +56,7 @@
   },
   {
     "title": "HyperCool: Reducing Encoding Cost in Overfitted Codecs with Hypernetworks",
-    "authors": "Borrell-Tatché, Pep; Aczel, Till; Ladune, Théo; Wattenhofer, Roger",
+    "authors": "Pep Borrell-Tatché; Till Aczel; Théo Ladune; Roger Wattenhofer",
     "venue": "Machine Learning for Wireless Communication and Networks @ AAAI",
     "year": 2025,
     "type": "preprint",
@@ -67,7 +67,7 @@
   },
   {
     "title": "IC-DLC: Differentiable Logic Circuits for Hardware-Friendly Image Compression",
-    "authors": "Aczel, Till; Jenny, David F.; Bührer, Simon Jonas; Plesner, Andreas; Di Maio, Antonio; Wattenhofer, Roger",
+    "authors": "Till Aczel; David F. Jenny; Simon Jonas Bührer; Andreas Plesner; Antonio Di Maio; Roger Wattenhofer",
     "venue": "Machine Learning for Wireless Communication and Networks @ AAAI",
     "year": 2026,
     "type": "conference",
