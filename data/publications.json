@@ -81,6 +81,6 @@
     "code": "",
     "bibtex": "@misc{borrelltache2025hypercoolreducingencodingcostoverfittedcodecshypernetworks,\n      title={HyperCool: Reducing Encoding Cost in Overfitted Codecs with Hypernetworks},\n      author={Pep Borrell-Tatché and Till Aczel and Théo Ladune and Roger Wattenhofer},\n      year={2025},\n      eprint={2509.18748},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2509.18748}\n}",
     "abstract": "",
-    "tldr": "Uses hypernetworks to reduce encoding costs in overfitted neural codecs, enabling more efficient compression without sacrificing reconstruction quality."
+    "tldr": "HyperCool uses hypernetworks to reduce encoding costs in overfitted neural codecs, enabling more efficient compression without sacrificing reconstruction quality."
   }
 ]
