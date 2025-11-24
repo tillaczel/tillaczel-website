@@ -8,7 +8,8 @@
     "url": "https://arxiv.org/abs/2510.09333",
     "code": "",
     "bibtex": "@misc{aczel2025efficientbayesianinferencenoisypairwisecomparisons,\n      title={Efficient Bayesian Inference from Noisy Pairwise Comparisons},\n      author={Till Aczel and Lucas Theis and Roger Wattenhofer},\n      year={2025},\n      eprint={2510.09333},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2510.09333}\n}",
-    "abstract": ""
+    "abstract": "",
+    "tldr": "Modeling rater noise to downweight unreliable annotators, BBQ makes human evaluation of AI-generated content more accurate, stable, and cost-effective."
   },
   {
     "title": "Mind the Gap: Removing the Discretization Gap in Differentiable Logic Gate Networks",
@@ -19,7 +20,8 @@
     "url": "https://arxiv.org/abs/2506.07500",
     "code": "",
     "bibtex": "@misc{yousefi2025mindgapremovingdiscretization,\n      title={Mind the Gap: Removing the Discretization Gap in Differentiable Logic Gate Networks},\n      author={Shakir Yousefi and Andreas Plesner and Till Aczel and Roger Wattenhofer},\n      year={2025},\n      eprint={2506.07500},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2506.07500}\n}",
-    "abstract": ""
+    "abstract": "",
+    "tldr": "Gumbel noise is introduced to differentiable logic gate networks, reducing the discretization gap and enabling much faster model convergence."
   },
   {
     "title": "Conditional Hallucinations for Image Compression",
@@ -30,40 +32,8 @@
     "url": "https://arxiv.org/abs/2410.19493",
     "code": "",
     "bibtex": "@misc{aczel2025conditionalhallucinationsimagecompression,\n      title={Conditional Hallucinations for Image Compression},\n      author={Till Aczel and Roger Wattenhofer},\n      year={2025},\n      eprint={2410.19493},\n      archivePrefix={arXiv},\n      primaryClass={eess.IV},\n      url={https://arxiv.org/abs/2410.19493}\n}",
-    "abstract": ""
-  },
-  {
-    "title": "The Unwinnable Arms Race of AI Image Detection",
-    "authors": "Till Aczel; Lorenzo Vettor; Andreas Plesner; Roger Wattenhofer",
-    "venue": "What Makes a Good Video: Next Practices in Video Generation and Evaluation Workshop @ NeurIPS",
-    "year": 2025,
-    "type": "conference",
-    "url": "https://arxiv.org/abs/2509.21135",
-    "code": "",
-    "bibtex": "@misc{aczel2025unwinnablearmsraceaiimagedetection,\n      title={The Unwinnable Arms Race of AI Image Detection},\n      author={Till Aczel and Lorenzo Vettor and Andreas Plesner and Roger Wattenhofer},\n      year={2025},\n      eprint={2509.21135},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2509.21135}\n}",
-    "abstract": ""
-  },
-  {
-    "title": "Light Differentiable Logic Gate Networks",
-    "authors": "Lukas Rüttgers; Till Aczel; Andreas Plesner; Roger Wattenhofer",
-    "venue": "arXiv preprint arXiv:2510.03250",
-    "year": 2025,
-    "type": "preprint",
-    "url": "https://arxiv.org/abs/2510.03250",
-    "code": "",
-    "bibtex": "@misc{ruttgers2025lightdifferentiablelogicgatenetworks,\n      title={Light Differentiable Logic Gate Networks},\n      author={Lukas Rüttgers and Till Aczel and Andreas Plesner and Roger Wattenhofer},\n      year={2025},\n      eprint={2510.03250},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2510.03250}\n}",
-    "abstract": ""
-  },
-  {
-    "title": "HyperCool: Reducing Encoding Cost in Overfitted Codecs with Hypernetworks",
-    "authors": "Pep Borrell-Tatché; Till Aczel; Théo Ladune; Roger Wattenhofer",
-    "venue": "Machine Learning for Wireless Communication and Networks @ AAAI",
-    "year": 2025,
-    "type": "preprint",
-    "url": "https://arxiv.org/abs/2509.18748",
-    "code": "",
-    "bibtex": "@misc{borrelltache2025hypercoolreducingencodingcostoverfittedcodecshypernetworks,\n      title={HyperCool: Reducing Encoding Cost in Overfitted Codecs with Hypernetworks},\n      author={Pep Borrell-Tatché and Till Aczel and Théo Ladune and Roger Wattenhofer},\n      year={2025},\n      eprint={2509.18748},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2509.18748}\n}",
-    "abstract": ""
+    "abstract": "",
+    "tldr": "ConHa is a learned image compression method that adjusts hallucinations to keep images realistic and artifact-free, better matching human preferences."
   },
   {
     "title": "IC-DLC: Differentiable Logic Circuits for Hardware-Friendly Image Compression",
@@ -74,6 +44,43 @@
     "url": "",
     "code": "",
     "bibtex": "@misc{aczel2025ic-dlcdifferentiablelogiccircuitshardwarefriendlyimagecompression,\n      title={IC-DLC: Differentiable Logic Circuits for Hardware-Friendly Image Compression},\n      author={Till Aczel and David F. Jenny and Simon Jonas Bührer and Andreas Plesner and Antonio Di Maio and Roger Wattenhofer},\n      year={2026},\n      eprint={2509.18748},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={}\n}",
-    "abstract": ""
+    "abstract": "",
+    "tldr": "Hardware-friendly image compression using differentiable logic circuits, enabling efficient deployment on edge devices while maintaining high compression ratios and perceptual quality."
+  },
+  {
+    "title": "The Unwinnable Arms Race of AI Image Detection",
+    "authors": "Till Aczel; Lorenzo Vettor; Andreas Plesner; Roger Wattenhofer",
+    "venue": "What Makes a Good Video: Next Practices in Video Generation and Evaluation Workshop @ NeurIPS",
+    "year": 2025,
+    "type": "conference",
+    "url": "https://arxiv.org/abs/2509.21135",
+    "code": "",
+    "bibtex": "@misc{aczel2025unwinnablearmsraceaiimagedetection,\n      title={The Unwinnable Arms Race of AI Image Detection},\n      author={Till Aczel and Lorenzo Vettor and Andreas Plesner and Roger Wattenhofer},\n      year={2025},\n      eprint={2509.21135},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2509.21135}\n}",
+    "abstract": "",
+    "tldr": "The arms race between AI image generators and detectors is unwinnable, with medium-complexity distributions the easiest to detect."
+  },
+  {
+    "title": "Light Differentiable Logic Gate Networks",
+    "authors": "Lukas Rüttgers; Till Aczel; Andreas Plesner; Roger Wattenhofer",
+    "venue": "arXiv preprint arXiv:2510.03250",
+    "year": 2025,
+    "type": "preprint",
+    "url": "https://arxiv.org/abs/2510.03250",
+    "code": "",
+    "bibtex": "@misc{ruttgers2025lightdifferentiablelogicgatenetworks,\n      title={Light Differentiable Logic Gate Networks},\n      author={Lukas Rüttgers and Till Aczel and Andreas Plesner and Roger Wattenhofer},\n      year={2025},\n      eprint={2510.03250},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2510.03250}\n}",
+    "abstract": "",
+    "tldr": "A new reparametrization of differentiable logic gate networks reduces model size, speeds up training, and stabilizes accuracy, enabling deeper, more efficient networks without losing performance."
+  },
+  {
+    "title": "HyperCool: Reducing Encoding Cost in Overfitted Codecs with Hypernetworks",
+    "authors": "Pep Borrell-Tatché; Till Aczel; Théo Ladune; Roger Wattenhofer",
+    "venue": "Machine Learning for Wireless Communication and Networks @ AAAI",
+    "year": 2025,
+    "type": "preprint",
+    "url": "https://arxiv.org/abs/2509.18748",
+    "code": "",
+    "bibtex": "@misc{borrelltache2025hypercoolreducingencodingcostoverfittedcodecshypernetworks,\n      title={HyperCool: Reducing Encoding Cost in Overfitted Codecs with Hypernetworks},\n      author={Pep Borrell-Tatché and Till Aczel and Théo Ladune and Roger Wattenhofer},\n      year={2025},\n      eprint={2509.18748},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2509.18748}\n}",
+    "abstract": "",
+    "tldr": "Uses hypernetworks to reduce encoding costs in overfitted neural codecs, enabling more efficient compression without sacrificing reconstruction quality."
   }
 ]

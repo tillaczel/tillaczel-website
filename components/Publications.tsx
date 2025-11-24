@@ -15,6 +15,7 @@ interface Publication {
   code?: string
   bibtex?: string
   abstract?: string
+  tldr?: string
 }
 
 export default function Publications() {
@@ -101,9 +102,17 @@ export default function Publications() {
                   
                   <p className={`${colorCombinations.publication.authors} text-sm mb-2`}>{pub.authors}</p>
                   
-                  <p className={`${colorCombinations.publication.venue} italic text-sm mb-4`}>
+                  <p className={`${colorCombinations.publication.venue} italic text-sm mb-3`}>
                     {pub.venue} • {pub.year}
                   </p>
+                  
+                  {/* TLDR */}
+                  {pub.tldr && (
+                    <div className={`mb-4 p-4 rounded-lg bg-blue-50 dark:bg-blue-950/40 border-l-4 ${colors.border.accent} ${colors.text.primary} shadow-sm`}>
+                      <p className={`text-xs font-semibold ${colors.accent.blue} mb-2 uppercase tracking-wide`}>TL;DR</p>
+                      <p className={`${colors.text.secondary} dark:text-gray-200 text-sm leading-relaxed`}>{pub.tldr}</p>
+                    </div>
+                  )}
                   
                   {/* Links */}
                   <div className="flex items-center gap-4 flex-wrap" onClick={(e) => e.stopPropagation()}>
