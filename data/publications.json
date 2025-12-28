@@ -57,7 +57,7 @@
     "code": "",
     "bibtex": "@misc{doucet2025bridgingdiversityuncertaintyactive,\n      title={Bridging Diversity and Uncertainty in Active learning with Self-Supervised Pre-Training},\n      author={Paul Doucet and Benjamin Estermann and Till Aczel and Roger Wattenhofer},\n      year={2025},\n      eprint={2403.03728},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2403.03728}\n}",
     "abstract": "",
-    "tldr": "Initialize with TypiClust to avoid cold start, then use Margin sampling. This simple combo (TCM) consistently beats modern methods, showing Margin is surprisingly strong with a good start."
+    "tldr": "Initialize with TypiClust to avoid cold start, then use Margin sampling. This simple ensemble consistently beats modern methods, showing Margin is surprisingly strong with a good start."
   },
   {
     "title": "The Unwinnable Arms Race of AI Image Detection",
