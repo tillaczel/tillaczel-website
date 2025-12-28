@@ -72,7 +72,7 @@ export const colors = {
   
     code: {
       background: 'bg-gray-900 dark:bg-[#0b0e13]',
-      text: 'text-gray-100 dark:text-gray-300',
+      text: '!text-white dark:!text-gray-300',
       border: 'border-gray-700 dark:border-[#1c2633]',
     },
   } as const

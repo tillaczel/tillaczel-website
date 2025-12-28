@@ -188,7 +188,7 @@ export default function Publications() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className={`flex items-center justify-between p-4 border-b ${colors.border.secondary}`}>
-              <h3 className={`text-xl font-bold ${colors.accent.blue}`}>BibTeX</h3>
+              <h3 className="text-xl font-bold text-white dark:text-blue-400">BibTeX</h3>
               <button
                 onClick={handleCloseModal}
                 className={`${colors.button.text} transition-colors`}
@@ -200,7 +200,7 @@ export default function Publications() {
               </button>
             </div>
             <div className="p-4 flex-1 overflow-auto">
-              <pre className={`text-sm ${colors.code.text} font-mono whitespace-pre-wrap ${colors.code.background} p-4 rounded ${colors.code.border}`}>
+              <pre className={`text-sm text-white dark:text-gray-300 font-mono whitespace-pre-wrap ${colors.code.background} p-4 rounded ${colors.code.border}`}>
                 {bibtexModal.text}
               </pre>
             </div>
