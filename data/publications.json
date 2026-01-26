@@ -36,12 +36,12 @@
     "tldr": "ConHa is a learned image compression method that adjusts hallucinations to keep images realistic and artifact-free, better matching human preferences."
   },
   {
-    "title": "IC-DLC: Differentiable Logic Circuits for Hardware-Friendly Image Compression",
+    "title": "GIC-DLC: Differentiable Logic Circuits for Hardware-Friendly Image Compression",
     "authors": "Till Aczel; David F. Jenny; Simon Jonas Bührer; Andreas Plesner; Antonio Di Maio; Roger Wattenhofer",
     "venue": "Machine Learning for Wireless Communication and Networks @ AAAI",
     "year": 2026,
     "type": "conference",
-    "url": "",
+    "url": "https://arxiv.org/abs/2601.14130",
     "code": "",
     "bibtex": "@misc{aczel2025ic-dlcdifferentiablelogiccircuitshardwarefriendlyimagecompression,\n      title={IC-DLC: Differentiable Logic Circuits for Hardware-Friendly Image Compression},\n      author={Till Aczel and David F. Jenny and Simon Jonas Bührer and Andreas Plesner and Antonio Di Maio and Roger Wattenhofer},\n      year={2026},\n      eprint={2509.18748},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={}\n}",
     "abstract": "",

@@ -27,12 +27,18 @@
     "id": 5,
     "date": "2025-04-01",
     "title": "CLIC2025 Organizing Team",
-    "description": "Joined the CLIC2025 organizing team, where I am carrying out the human evaluation study for the challenge."
+    "description": "Joining the CLIC2025 organizing team, where I am carrying out the human evaluation study for the challenge."
   },
   {
     "id": 6,
     "date": "2025-09-25",
     "title": "Mind the Gap Paper Accepted",
     "description": "Our work, 'Mind the Gap: Removing the Discretization Gap in Differentiable Logic Gate Networks', is accepted at NeurIPS2025."
+  },
+  {
+    "id": 7,
+    "date": "2026-01-02",
+    "title": "Internship at Mabyduck",
+    "description": "Starting an internship at Mabyduck, where I am working on quality assessment of AI-generated images."
   }
 ]
