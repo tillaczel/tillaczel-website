@@ -1,5 +1,37 @@
 [
   {
+    "title": "Differentiable Logic Gate Network Representation Learning",
+    "type": "S",
+    "supervisors": ["Andreas Plesner", "Till Aczel"],
+    "semester": "FS 26",
+    "students": [],
+    "status": "current"
+  },
+  {
+    "title": "Diffusion model guidance",
+    "type": "S",
+    "supervisors": ["Till Aczel"],
+    "semester": "FS 26",
+    "students": [],
+    "status": "current"
+  },
+  {
+    "title": "Event-based data classification with Differentiable Logic Gate Networks",
+    "type": "S",
+    "supervisors": ["Andreas Plesner", "Till Aczel"],
+    "semester": "FS 26",
+    "students": [],
+    "status": "current"
+  },
+  {
+    "title": "Jet Substructure Classification with Logic Gate Networks",
+    "type": "B",
+    "supervisors": ["Andreas Plesner", "Till Aczel"],
+    "semester": "FS 26",
+    "students": [],
+    "status": "current"
+  },
+  {
     "title": "Normalized Vision Transformers",
     "type": "S",
     "supervisors": ["Andreas Plesner", "Till Aczel"],
@@ -8,12 +40,12 @@
     "status": "current"
   },
   {
-    "title": "Automated Foosball Commentary",
+    "title": "Automated Foosball Analysis",
     "type": "B",
     "supervisors": ["Till Aczel", "Joël Mathys"],
     "semester": "HS 25",
     "students": ["Victor Willems"],
-    "status": "current"
+    "status": "finished"
   },
   {
     "title": "Cool-chic",
@@ -24,42 +56,42 @@
     "status": "current"
   },
   {
-    "title": "DiffLUT",
+    "title": "BitLogic: A Framework for Gradient-Based LUT-Native Neural Networks & Beyond Depth: Scalable Lookuptable Networks [confidential]",
     "type": "M",
     "supervisors": ["Till Aczel", "Andreas Plesner"],
     "semester": "HS 25",
     "students": ["Simon Bührer"],
-    "status": "current"
+    "status": "finished"
   },
   {
-    "title": "Exploring normalized transformers",
+    "title": "Exploring Normalized Transformers [confidential]",
     "type": "M",
     "supervisors": ["Andreas Plesner", "Till Aczel"],
     "semester": "HS 25",
     "students": ["Shakir Yousefi"],
-    "status": "current"
+    "status": "finished"
   },
   {
-    "title": "Faster DiffLogic",
+    "title": "Faster DiffLogic [confidential]",
     "type": "S",
     "supervisors": ["Andreas Plesner", "Till Aczel"],
     "semester": "FS 25",
     "students": ["Joshua Durrant"],
-    "status": "current"
+    "status": "finished"
   },
   {
-    "title": "Scalar Quantization for Audio Compression",
+    "title": "Neural Audio Compression without Residual Vector Quantization [confidential]",
     "type": "S",
     "supervisors": ["Till Aczel", "Luca Lanzendörfer"],
     "semester": "FS 25",
     "students": ["Fei Gao"],
-    "status": "current"
+    "status": "finished"
   },
   {
     "title": "View-Specific Video Compression",
     "type": "M",
     "supervisors": ["Till Aczel"],
-    "semester": "FS 25",
+    "semester": "HS 25",
     "students": ["Niklas Pohl"],
     "status": "current"
   },
