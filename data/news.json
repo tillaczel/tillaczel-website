@@ -45,7 +45,7 @@
     "id": 8,
     "date": "2026-01-25",
     "title": "Light DLGNs Paper Accepted",
-    "description": "'Light Differentiable Logic Gate Networks' got accepted at ICLR2026! A simple reparametrization that shrinks model size, speeds up training, and stabilizes accuracy — finally letting us scale logic gate networks deeper without losing performance."
+    "description": "'Light Differentiable Logic Gate Networks' got accepted at ICLR2026! A simple reparametrization that shrinks model size, speeds up training, and stabilizes accuracy, finally letting us scale logic gate networks deeper without losing performance."
   },
   {
     "id": 9,
