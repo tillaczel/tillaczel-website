@@ -59,7 +59,6 @@
     "abstract": "",
     "tldr": "ConHa is a learned image compression method that adjusts hallucinations to keep images realistic and artifact-free, better matching human preferences."
   },
-
   {
     "title": "HyperCool: Reducing Encoding Cost in Overfitted Codecs with Hypernetworks",
     "authors": "Pep Borrell-Tatché; Till Aczel; Théo Ladune; Roger Wattenhofer",
