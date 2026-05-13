@@ -59,12 +59,25 @@
     "abstract": "",
     "tldr": "ConHa is a learned image compression method that adjusts hallucinations to keep images realistic and artifact-free, better matching human preferences."
   },
+
+  {
+    "title": "HyperCool: Reducing Encoding Cost in Overfitted Codecs with Hypernetworks",
+    "authors": "Pep Borrell-Tatché; Till Aczel; Théo Ladune; Roger Wattenhofer",
+    "venue": "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+    "year": 2026,
+    "type": "conference",
+    "url": "https://arxiv.org/abs/2509.18748",
+    "code": "",
+    "bibtex": "@misc{borrelltache2025hypercoolreducingencodingcostoverfittedcodecshypernetworks,\n      title={HyperCool: Reducing Encoding Cost in Overfitted Codecs with Hypernetworks},\n      author={Pep Borrell-Tatché and Till Aczel and Théo Ladune and Roger Wattenhofer},\n      year={2025},\n      eprint={2509.18748},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2509.18748}\n}",
+    "abstract": "",
+    "tldr": "HyperCool uses hypernetworks to reduce encoding costs in overfitted neural codecs, enabling more efficient compression without sacrificing reconstruction quality."
+  },
   {
     "title": "Bridging diversity and uncertainty in active learning with self-supervised pre-training",
     "authors": "Paul Doucet; Benjamin Estermann; Till Aczel; Roger Wattenhofer",
-    "venue": "arXiv preprint arXiv:2403.03728",
+    "venue": "Practical ML for Limited/Low Resource Settings (PML4LRS) Workshop @ ICLR",
     "year": 2024,
-    "type": "preprint",
+    "type": "conference",
     "url": "https://arxiv.org/abs/2403.03728",
     "code": "",
     "bibtex": "@misc{doucet2025bridgingdiversityuncertaintyactive,\n      title={Bridging Diversity and Uncertainty in Active learning with Self-Supervised Pre-Training},\n      author={Paul Doucet and Benjamin Estermann and Till Aczel and Roger Wattenhofer},\n      year={2025},\n      eprint={2403.03728},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2403.03728}\n}",
@@ -82,17 +95,5 @@
     "bibtex": "@misc{aczel2025unwinnablearmsraceaiimagedetection,\n      title={The Unwinnable Arms Race of AI Image Detection},\n      author={Till Aczel and Lorenzo Vettor and Andreas Plesner and Roger Wattenhofer},\n      year={2025},\n      eprint={2509.21135},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2509.21135}\n}",
     "abstract": "",
     "tldr": "The arms race between AI image generators and detectors is unwinnable, with medium-complexity distributions the easiest to detect."
-  },
-  {
-    "title": "HyperCool: Reducing Encoding Cost in Overfitted Codecs with Hypernetworks",
-    "authors": "Pep Borrell-Tatché; Till Aczel; Théo Ladune; Roger Wattenhofer",
-    "venue": "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
-    "year": 2026,
-    "type": "conference",
-    "url": "https://arxiv.org/abs/2509.18748",
-    "code": "",
-    "bibtex": "@misc{borrelltache2025hypercoolreducingencodingcostoverfittedcodecshypernetworks,\n      title={HyperCool: Reducing Encoding Cost in Overfitted Codecs with Hypernetworks},\n      author={Pep Borrell-Tatché and Till Aczel and Théo Ladune and Roger Wattenhofer},\n      year={2025},\n      eprint={2509.18748},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2509.18748}\n}",
-    "abstract": "",
-    "tldr": "HyperCool uses hypernetworks to reduce encoding costs in overfitted neural codecs, enabling more efficient compression without sacrificing reconstruction quality."
   }
 ]
