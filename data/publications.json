@@ -2,14 +2,26 @@
   {
     "title": "Efficient Bayesian Inference from Noisy Pairwise Comparisons",
     "authors": "Till Aczel; Lucas Theis; Roger Wattenhofer",
-    "venue": "arXiv preprint arXiv:2510.09333",
-    "year": 2025,
-    "type": "preprint",
+    "venue": "International Conference on Machine Learning (ICML)",
+    "year": 2026,
+    "type": "conference",
     "url": "https://arxiv.org/abs/2510.09333",
     "code": "",
     "bibtex": "@misc{aczel2025efficientbayesianinferencenoisypairwisecomparisons,\n      title={Efficient Bayesian Inference from Noisy Pairwise Comparisons},\n      author={Till Aczel and Lucas Theis and Roger Wattenhofer},\n      year={2025},\n      eprint={2510.09333},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2510.09333}\n}",
     "abstract": "",
     "tldr": "Modeling rater noise to downweight unreliable annotators, BBQ makes human evaluation of AI-generated content more accurate, stable, and cost-effective."
+  },
+  {
+    "title": "Light Differentiable Logic Gate Networks",
+    "authors": "Lukas Rüttgers; Till Aczel; Andreas Plesner; Roger Wattenhofer",
+    "venue": "International Conference on Learning Representations (ICLR)",
+    "year": 2026,
+    "type": "conference",
+    "url": "https://arxiv.org/abs/2510.03250",
+    "code": "",
+    "bibtex": "@misc{ruttgers2025lightdifferentiablelogicgatenetworks,\n      title={Light Differentiable Logic Gate Networks},\n      author={Lukas Rüttgers and Till Aczel and Andreas Plesner and Roger Wattenhofer},\n      year={2025},\n      eprint={2510.03250},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2510.03250}\n}",
+    "abstract": "",
+    "tldr": "A new reparametrization of differentiable logic gate networks reduces model size, speeds up training, and stabilizes accuracy, enabling deeper, more efficient networks without losing performance."
   },
   {
     "title": "Mind the Gap: Removing the Discretization Gap in Differentiable Logic Gate Networks",
@@ -24,18 +36,6 @@
     "tldr": "Gumbel noise is introduced to differentiable logic gate networks, reducing the discretization gap and enabling much faster model convergence."
   },
   {
-    "title": "Conditional Hallucinations for Image Compression",
-    "authors": "Till Aczel; Roger Wattenhofer",
-    "venue": "2025 Data Compression Conference (DCC)",
-    "year": 2025,
-    "type": "conference",
-    "url": "https://arxiv.org/abs/2410.19493",
-    "code": "",
-    "bibtex": "@misc{aczel2025conditionalhallucinationsimagecompression,\n      title={Conditional Hallucinations for Image Compression},\n      author={Till Aczel and Roger Wattenhofer},\n      year={2025},\n      eprint={2410.19493},\n      archivePrefix={arXiv},\n      primaryClass={eess.IV},\n      url={https://arxiv.org/abs/2410.19493}\n}",
-    "abstract": "",
-    "tldr": "ConHa is a learned image compression method that adjusts hallucinations to keep images realistic and artifact-free, better matching human preferences."
-  },
-  {
     "title": "GIC-DLC: Differentiable Logic Circuits for Hardware-Friendly Image Compression",
     "authors": "Till Aczel; David F. Jenny; Simon Jonas Bührer; Andreas Plesner; Antonio Di Maio; Roger Wattenhofer",
     "venue": "Machine Learning for Wireless Communication and Networks @ AAAI",
@@ -46,6 +46,18 @@
     "bibtex": "@misc{aczel2025ic-dlcdifferentiablelogiccircuitshardwarefriendlyimagecompression,\n      title={IC-DLC: Differentiable Logic Circuits for Hardware-Friendly Image Compression},\n      author={Till Aczel and David F. Jenny and Simon Jonas Bührer and Andreas Plesner and Antonio Di Maio and Roger Wattenhofer},\n      year={2026},\n      eprint={2509.18748},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={}\n}",
     "abstract": "",
     "tldr": "Hardware-friendly image compression using differentiable logic circuits, enabling efficient deployment on edge devices while maintaining high compression ratios and perceptual quality."
+  },
+  {
+    "title": "Conditional Hallucinations for Image Compression",
+    "authors": "Till Aczel; Roger Wattenhofer",
+    "venue": "2025 Data Compression Conference (DCC)",
+    "year": 2025,
+    "type": "conference",
+    "url": "https://arxiv.org/abs/2410.19493",
+    "code": "",
+    "bibtex": "@misc{aczel2025conditionalhallucinationsimagecompression,\n      title={Conditional Hallucinations for Image Compression},\n      author={Till Aczel and Roger Wattenhofer},\n      year={2025},\n      eprint={2410.19493},\n      archivePrefix={arXiv},\n      primaryClass={eess.IV},\n      url={https://arxiv.org/abs/2410.19493}\n}",
+    "abstract": "",
+    "tldr": "ConHa is a learned image compression method that adjusts hallucinations to keep images realistic and artifact-free, better matching human preferences."
   },
   {
     "title": "Bridging diversity and uncertainty in active learning with self-supervised pre-training",
@@ -72,23 +84,11 @@
     "tldr": "The arms race between AI image generators and detectors is unwinnable, with medium-complexity distributions the easiest to detect."
   },
   {
-    "title": "Light Differentiable Logic Gate Networks",
-    "authors": "Lukas Rüttgers; Till Aczel; Andreas Plesner; Roger Wattenhofer",
-    "venue": "arXiv preprint arXiv:2510.03250",
-    "year": 2025,
-    "type": "preprint",
-    "url": "https://arxiv.org/abs/2510.03250",
-    "code": "",
-    "bibtex": "@misc{ruttgers2025lightdifferentiablelogicgatenetworks,\n      title={Light Differentiable Logic Gate Networks},\n      author={Lukas Rüttgers and Till Aczel and Andreas Plesner and Roger Wattenhofer},\n      year={2025},\n      eprint={2510.03250},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2510.03250}\n}",
-    "abstract": "",
-    "tldr": "A new reparametrization of differentiable logic gate networks reduces model size, speeds up training, and stabilizes accuracy, enabling deeper, more efficient networks without losing performance."
-  },
-  {
     "title": "HyperCool: Reducing Encoding Cost in Overfitted Codecs with Hypernetworks",
     "authors": "Pep Borrell-Tatché; Till Aczel; Théo Ladune; Roger Wattenhofer",
-    "venue": "Machine Learning for Wireless Communication and Networks @ AAAI",
-    "year": 2025,
-    "type": "preprint",
+    "venue": "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+    "year": 2026,
+    "type": "conference",
     "url": "https://arxiv.org/abs/2509.18748",
     "code": "",
     "bibtex": "@misc{borrelltache2025hypercoolreducingencodingcostoverfittedcodecshypernetworks,\n      title={HyperCool: Reducing Encoding Cost in Overfitted Codecs with Hypernetworks},\n      author={Pep Borrell-Tatché and Till Aczel and Théo Ladune and Roger Wattenhofer},\n      year={2025},\n      eprint={2509.18748},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG},\n      url={https://arxiv.org/abs/2509.18748}\n}",

@@ -40,5 +40,17 @@
     "date": "2026-01-02",
     "title": "Internship at Mabyduck",
     "description": "Starting an internship at Mabyduck, where I am working on quality assessment of AI-generated images."
+  },
+  {
+    "id": 8,
+    "date": "2026-01-25",
+    "title": "Light DLGNs Paper Accepted",
+    "description": "Our work, 'Light Differentiable Logic Gate Networks', is accepted at ICLR2026."
+  },
+  {
+    "id": 9,
+    "date": "2026-04-30",
+    "title": "BBQ Paper Accepted",
+    "description": "Our work, 'Efficient Bayesian Inference from Noisy Pairwise Comparisons', is accepted at ICML2026."
   }
 ]
