@@ -1,6 +1,6 @@
 [
   {
-    "title": "Differentiable Logic Gate Network Representation Learning",
+    "title": "Representation Learning with Differentiable Logic Gate Networks",
     "type": "S",
     "supervisors": ["Andreas Plesner", "Till Aczel"],
     "semester": "FS 26",
@@ -8,7 +8,7 @@
     "status": "current"
   },
   {
-    "title": "Diffusion model guidance",
+    "title": "Diffusion Model Guidance",
     "type": "S",
     "supervisors": ["Till Aczel"],
     "semester": "FS 26",
@@ -32,14 +32,6 @@
     "status": "current"
   },
   {
-    "title": "Normalized Vision Transformers",
-    "type": "S",
-    "supervisors": ["Andreas Plesner", "Till Aczel"],
-    "semester": "FS 26",
-    "students": ["Ivanovas Anselm"],
-    "status": "current"
-  },
-  {
     "title": "Automated Foosball Analysis",
     "type": "B",
     "supervisors": ["Till Aczel", "Joël Mathys"],
@@ -48,7 +40,7 @@
     "status": "finished"
   },
   {
-    "title": "Cool-chic",
+    "title": "Lossless Cool-chic",
     "type": "M",
     "supervisors": ["Till Aczel"],
     "semester": "HS 25",
@@ -61,14 +53,6 @@
     "supervisors": ["Till Aczel", "Andreas Plesner"],
     "semester": "HS 25",
     "students": ["Simon Bührer"],
-    "status": "finished"
-  },
-  {
-    "title": "Exploring Normalized Transformers [confidential]",
-    "type": "M",
-    "supervisors": ["Andreas Plesner", "Till Aczel"],
-    "semester": "HS 25",
-    "students": ["Shakir Yousefi"],
     "status": "finished"
   },
   {
